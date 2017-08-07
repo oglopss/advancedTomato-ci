@@ -1,0 +1,91 @@
+# Using container-based infrastructure
+# sudo: false
+# enable trusty beta
+sudo: required
+dist: trusty
+
+# 'bash' will define a generic environment without interfering environment
+# settings like "CC=gcc"
+language: bash
+
+# Only build the master branch
+branches:
+    only:
+        - master
+
+# Caching the downloaded src packages between several builds to save travis-ci
+# download time and bandwidth
+cache:
+    directories:
+        - $HOME/src
+        - $HOME/x-tools
+        # - $HOME/zlib-install
+        # - $HOME/openssl-install
+        # - $HOME/pcre-install
+        # - $HOME/libsodium-install
+        # - $HOME/mbedtls-install
+        # - $HOME/libev-install
+
+
+# Installing needed dependencies
+addons:
+    apt:
+        packages:
+            - bison
+            - flex
+            - gperf
+            - libncurses5-dev
+            - texinfo
+            - help2man
+            - asciidoc
+            - xmlto
+            - libncurses5
+            - libgmp-dev 
+            - nettle-dev
+            - libtool
+            - autogen
+            - automake
+            - libstdc++6 
+            - net-tools
+            
+# Handle git submodules yourself
+git:
+    submodules: false
+    
+# Use sed to replace the SSH URL with the public URL, then initialize submodules
+before_install:
+    - sed -i 's/git@github.com:/https:\/\/github.com\//' .gitmodules
+    - git submodule update --init --recursive
+    # - sudo apt-get update -qq
+    # - sudo apt-get install libpcre3 libpcre3-dev -y
+    
+# Building crosstool-NG core
+# keep these on at all times because it is fast
+install:
+    - pwd
+
+# Here is the list of all the standard samples tracked
+# by the continuous integration system
+env:
+    # - CT_SAMPLE=mipsel-unknown-linux-gnu
+    matrix:
+        # - export PATH=$HOME/x-tools/mipsel-unknown-linux-uclibc/bin:$PATH
+        - SS_VER=latest
+        - SS_VER=v3.0.8
+        - SS_VER=v3.0.7
+
+    global:
+        - secure: UdSn/Ui6boo3CtxlxiluOCnTIVDcRAEPYc3780g8FnHCTopYCoFm1rugzXO009hXAKPN34hD0SxFI7iAfp/4Nd5uhRFCwhQC/WiLBXAzpdDKavqFvwCBActgZ2x6h5il4zVDxErpRoUDq3bpMwzA+vUcsQ3hH1xFz4Vhdoi8056Q027TbvjmkrxMADoguqIIhfZUKbXRNvsjjsxT0SyzRbN2algWGesrplHsz2ePY+Gm0QPf9r0ODtmoOwmY2apz/WSk28toUw4ihFHa5FHPQoDiT3C87nDP9R7d5Vu9usumWP34DqzJJO+XJDl6+20ZHVTNhxossi119uTp8tFoxUuoqpUIO65yhDwW3k5BMyi+BPJZQwvAxHb7upWd2uMkN8iOwj0z+ImW0lY314yp1R42gMyKljGxaZpbqwyp31vqHh/rKxzYwkILabzFeUu4TnM+iwqB/OeSST5zfuwFUfeCBjVRN9GgnBHOENCHecF9jXDq/W+XkY1J/vGXhAzEVOnD2LMXV9OWR9v5k5DS09w3DEJ+lTZ14wHk8wLEKtIdL2ynReJxTP6wycMUsHRoYLsD88wwerfZO9i3q7aYmmTha/gamDCdv2B9JpaiPTBsaxYUxXBS7KTc00ukzbbtWtv/KV2dXW/lrtpyYj3AEkrgjYDyQBjQDQA0cN5RZfk=
+        
+# Building the standard samples
+script:
+    # - . ls -l $HOME
+    - . $TRAVIS_BUILD_DIR/.travis.sh      # Load the travis environment
+    - echo ============================
+    - sudo pre_build_prep
+
+# On failure displaying the last lines of the log file
+after_failure:
+    - tail -n 1000 $TRAVIS_BUILD_DIR/config/build.log
+
+# after_success: . $TRAVIS_BUILD_DIR/update-gh-pages.sh
