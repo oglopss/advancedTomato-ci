@@ -661,8 +661,7 @@ cd ~
 git clone -b fedora https://github.com/oglops/advancedtomato.git
 git clone -b v3.4-140 https://github.com/oglops/advancedtomato-gui.git
 
-sudo ln -s ~/builds/oglops/advancedtomato/tools/brcm /opt/brcm
-export PATH=$PATH:/opt/brcm/hndtools-mipsel-linux/bin:/opt/brcm/hndtools-mipsel-uclibc/bin
+
 
 
 rsync -rpv --ignore-times  ./advancedtomato-gui/*  ./advancedtomato/release/src-rt/router/www/  --exclude .git
@@ -699,6 +698,9 @@ build_tomato()
 
 
     cd ~/advancedtomato/release/src-rt
+
+    sudo ln -s ~/advancedtomato/tools/brcm /opt/brcm
+    export PATH=$PATH:/opt/brcm/hndtools-mipsel-linux/bin:/opt/brcm/hndtools-mipsel-uclibc/bin
 
     make distclean ; rm ~/advancedTomato.txt;  time make V1=RT-N5x-CN- V2=-140 r2z  2>&1 | tee ~/advancedTomato.txt
     
