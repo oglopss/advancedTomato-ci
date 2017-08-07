@@ -697,6 +697,9 @@ echo /usr/share/aclocal | sudo tee --append /usr/local/share/aclocal/dirlist
 build_tomato()
 {
 
+
+    cd advancedtomato/release/src-rt
+    
     make distclean ; rm ~/advancedTomato.txt;  time make V1=RT-N5x-CN- V2=-140 r2z  2>&1 | tee ~/advancedTomato.txt
     
 }
