@@ -674,21 +674,21 @@ wget http://ftp.gnu.org/gnu/automake/automake-1.15.tar.gz
 tar xf automake*
 cd automake-1.15
 sh configure --prefix /usr/local
-make install
+sudo make install
 
 cd ~
 wget http://ftp.gnu.org/gnu/automake/automake-1.13.tar.gz
 tar xf automake*
 cd automake-1.13
 sh configure --prefix /usr/local
-make install
+sudo make install
 
 cd ~
 wget http://ftp.gnu.org/gnu/autoconf/autoconf-2.69.tar.gz 
 tar xf autoconf*
 cd autoconf-2.69
 sh configure --prefix /usr/local
-make install
+sudo  make install
 
 echo /usr/share/aclocal | sudo tee --append /usr/local/share/aclocal/dirlist
 
