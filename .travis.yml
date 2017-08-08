@@ -47,10 +47,6 @@ addons:
             - automake
             - libstdc++6 
             - net-tools
-            - gcc-multilib
-            - g++-multilib
-            - lib32z1-dev
-            - gconf
     
 # Handle git submodules yourself
 git:
