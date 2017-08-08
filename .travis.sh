@@ -672,31 +672,31 @@ cd advancedtomato/release/src-rt
 wget http://ftp.gnu.org/gnu/automake/automake-1.15.tar.gz
 tar xf automake*
 cd automake-1.15
-sh configure --prefix /usr/local
+sh configure --prefix /usr
 sudo make install
 
 cd ~
 wget http://ftp.gnu.org/gnu/automake/automake-1.13.tar.gz
 tar xf automake*
 cd automake-1.13
-sh configure --prefix /usr/local
+sh configure --prefix /usr
 sudo make install
 
 cd ~
 wget http://ftp.gnu.org/gnu/autoconf/autoconf-2.69.tar.gz 
 tar xf autoconf*
 cd autoconf-2.69
-sh configure --prefix /usr/local
+sh configure --prefix /usr
 sudo  make install
 
-echo /usr/share/aclocal | sudo tee --append /usr/local/share/aclocal/dirlist
+# echo /usr/share/aclocal | sudo tee --append /usr/local/share/aclocal/dirlist
 
-cd ~
-wget http://gnu.mirror.globo.tech/libtool/libtool-2.4.2.tar.gz
-tar xvf libtool-2.4.2*
-cd libtool-2.4.2*
-sh configure --prefix=/usr
-sudo  make install
+# cd ~
+# wget http://gnu.mirror.globo.tech/libtool/libtool-2.4.2.tar.gz
+# tar xvf libtool-2.4.2*
+# cd libtool-2.4.2*
+# sh configure --prefix=/usr
+# sudo  make install
 
 }
 
