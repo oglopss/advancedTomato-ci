@@ -51,7 +51,6 @@ addons:
             - g++-multilib
             - lib32z1-dev
             - gconf
-            - pkg-config
     
 # Handle git submodules yourself
 git:
