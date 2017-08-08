@@ -691,6 +691,13 @@ sudo  make install
 
 echo /usr/share/aclocal | sudo tee --append /usr/local/share/aclocal/dirlist
 
+cd ~
+wget http://gnu.mirror.globo.tech/libtool/libtool-2.4.2.tar.gz
+tar xvf libtool-2.4.2*
+cd libtool-2.4.2*
+sh configure
+sudo  make install
+
 }
 
 build_tomato()

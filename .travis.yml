@@ -42,12 +42,12 @@ addons:
             - libncurses5
             - libgmp-dev 
             - nettle-dev
-            - libtool
+            #- libtool
             - autogen
             - automake
             - libstdc++6 
             - net-tools
-    
+
 # Handle git submodules yourself
 git:
     submodules: false
