@@ -706,6 +706,8 @@ build_tomato()
 
     cd ~/advancedtomato/release/src-rt
 
+    cp -f router/mysql/configure.mipsel router/mysql/configure 
+
     sudo ln -s ~/advancedtomato/tools/brcm /opt/brcm
     export PATH=$PATH:/opt/brcm/hndtools-mipsel-linux/bin:/opt/brcm/hndtools-mipsel-uclibc/bin
 
