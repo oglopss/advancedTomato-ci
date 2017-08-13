@@ -714,12 +714,12 @@ sudo  make install
 
 # echo /usr/share/aclocal | sudo tee --append /usr/local/share/aclocal/dirlist
 
-cd ~
-wget http://gnu.mirror.globo.tech/libtool/libtool-2.4.6.tar.gz
-tar xvf libtool-2.4.6*
-cd libtool-2.4.6*
-sh configure --prefix=/usr
-sudo  make install
+# cd ~
+# wget http://gnu.mirror.globo.tech/libtool/libtool-2.4.6.tar.gz
+# tar xvf libtool-2.4.6*
+# cd libtool-2.4.6*
+# sh configure --prefix=/usr
+# sudo  make install
 
 }
 
@@ -749,11 +749,11 @@ build_tomato()
 
     # https://bugs.archlinux.org/task/10012
 
-    cd router/libvorbis
-    libtoolize --force --copy
-    aclocal
-    autoconf
-    automake
+    # cd router/libvorbis
+    # libtoolize --force --copy
+    # aclocal
+    # autoconf
+    # automake
 
     cd ~/advancedtomato/release/src-rt
 
