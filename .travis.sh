@@ -683,9 +683,25 @@ sh configure --prefix /usr
 sudo make install
 
 cd ~
+wget http://ftp.gnu.org/gnu/automake/automake-1.10.tar.gz
+tar xf automake-1.10.tar.gz
+cd automake-1.10
+sh configure --prefix /usr
+sudo make install
+
+
+cd ~
 wget http://ftp.gnu.org/gnu/autoconf/autoconf-2.69.tar.gz 
-tar xf autoconf*
+tar xf autoconf-2.69
 cd autoconf-2.69
+sh configure --prefix /usr
+sudo  make install
+
+
+cd ~
+wget http://ftp.gnu.org/gnu/autoconf/autoconf-2.63.tar.gz 
+tar xf autoconf-2.63
+cd autoconf-2.63
 sh configure --prefix /usr
 sudo  make install
 
