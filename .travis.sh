@@ -744,7 +744,7 @@ build_tomato()
     export PATH=$PATH:/opt/brcm/hndtools-mipsel-linux/bin:/opt/brcm/hndtools-mipsel-uclibc/bin
 
     # libtool bug fix for libvorbis
-    export echo=echo
+    # export echo=echo
 
     make distclean ; rm ~/advancedTomato.txt;  time make V1=RT-N5x-CN- V2=-140 r2z  2>&1 | tee ~/advancedTomato.txt
     
