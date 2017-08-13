@@ -746,7 +746,7 @@ build_tomato()
     export PATH=$PATH:/opt/brcm/hndtools-mipsel-linux/bin:/opt/brcm/hndtools-mipsel-uclibc/bin
 
     # libtool bug fix for libvorbis
-    # export echo=echo
+    export echo=echo
 
 
     # https://bugs.archlinux.org/task/10012
