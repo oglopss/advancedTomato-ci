@@ -746,6 +746,17 @@ build_tomato()
     # libtool bug fix for libvorbis
     # export echo=echo
 
+
+    # https://bugs.archlinux.org/task/10012
+
+    cd router/libvorbis
+    libtoolize --force --copy
+    aclocal
+    autoconf
+    automake
+
+    cd ~/advancedtomato/release/src-rt
+
     make distclean ; rm ~/advancedTomato.txt;  time make V1=RT-N5x-CN- V2=-140 r2z  2>&1 | tee ~/advancedTomato.txt
     
 }
