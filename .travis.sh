@@ -658,7 +658,7 @@ pre_build_prep()
 {
 cd ~
 
-git clone -b travis https://github.com/oglops/advancedtomato.git
+git clone -b fedora https://github.com/oglops/advancedtomato.git
 git clone -b v3.4-140 https://github.com/oglops/advancedtomato-gui.git
 
 
@@ -718,7 +718,7 @@ cd ~
 wget http://gnu.mirror.globo.tech/libtool/libtool-2.4.6.tar.gz
 tar xvf libtool-2.4.6*
 cd libtool-2.4.6*
-sh configure --prefix=/usr
+sh configure # --prefix=/usr
 sudo  make install
 
 }
