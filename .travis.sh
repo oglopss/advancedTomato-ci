@@ -669,34 +669,34 @@ rsync -rpv --ignore-times  ./advancedtomato-gui/*  ./advancedtomato/release/src-
 cd advancedtomato/release/src-rt
 
 
-# wget http://ftp.gnu.org/gnu/automake/automake-1.15.tar.gz
-# tar xf automake*
-# cd automake-1.15
-# sh configure --prefix /usr
-# sudo make install
+wget http://ftp.gnu.org/gnu/automake/automake-1.15.tar.gz
+tar xf automake*
+cd automake-1.15
+sh configure --prefix /usr
+sudo make install
 
-# cd ~
-# wget http://ftp.gnu.org/gnu/automake/automake-1.13.4.tar.gz
-# tar xf automake-1.13.4.tar.gz
-# cd automake-1.13.4
-# sh configure --prefix /usr
-# sudo make install
+cd ~
+wget http://ftp.gnu.org/gnu/automake/automake-1.13.4.tar.gz
+tar xf automake-1.13.4.tar.gz
+cd automake-1.13.4
+sh configure --prefix /usr
+sudo make install
 
-# cd ~
-# wget http://ftp.gnu.org/gnu/autoconf/autoconf-2.69.tar.gz 
-# tar xf autoconf*
-# cd autoconf-2.69
-# sh configure --prefix /usr
-# sudo  make install
+cd ~
+wget http://ftp.gnu.org/gnu/autoconf/autoconf-2.69.tar.gz 
+tar xf autoconf*
+cd autoconf-2.69
+sh configure --prefix /usr
+sudo  make install
 
-# # echo /usr/share/aclocal | sudo tee --append /usr/local/share/aclocal/dirlist
+# echo /usr/share/aclocal | sudo tee --append /usr/local/share/aclocal/dirlist
 
-# cd ~
-# wget http://gnu.mirror.globo.tech/libtool/libtool-2.4.6.tar.gz
-# tar xvf libtool-2.4.6*
-# cd libtool-2.4.6*
-# sh configure --prefix=/usr
-# sudo  make install
+cd ~
+wget http://gnu.mirror.globo.tech/libtool/libtool-2.4.6.tar.gz
+tar xvf libtool-2.4.6*
+cd libtool-2.4.6*
+sh configure --prefix=/usr
+sudo  make install
 
 }
 
@@ -720,6 +720,6 @@ build_tomato()
     sudo ln -s ~/advancedtomato/tools/brcm /opt/brcm
     export PATH=$PATH:/opt/brcm/hndtools-mipsel-linux/bin:/opt/brcm/hndtools-mipsel-uclibc/bin
 
-    # make distclean ; rm ~/advancedTomato.txt;  time make V1=RT-N5x-CN- V2=-140 r2z  2>&1 | tee ~/advancedTomato.txt
+    make distclean ; rm ~/advancedTomato.txt;  time make V1=RT-N5x-CN- V2=-140 r2z  2>&1 | tee ~/advancedTomato.txt
     
 }
