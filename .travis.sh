@@ -749,11 +749,12 @@ build_tomato()
 
     # https://bugs.archlinux.org/task/10012
 
-    # cd router/libvorbis
-    # libtoolize --force --copy
+    cd router/libvorbis
+    libtoolize --force --copy
     # aclocal
     # autoconf
     # automake
+    ./autogen.sh
 
     cd ~/advancedtomato/release/src-rt
 
