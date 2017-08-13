@@ -658,7 +658,7 @@ pre_build_prep()
 {
 cd ~
 
-git clone -b fedora https://github.com/oglops/advancedtomato.git
+git clone -b travis https://github.com/oglops/advancedtomato.git
 git clone -b v3.4-140 https://github.com/oglops/advancedtomato-gui.git
 
 
@@ -749,12 +749,12 @@ build_tomato()
 
     # https://bugs.archlinux.org/task/10012
 
-    cd router/libvorbis
-    libtoolize --force --copy
+    # cd router/libvorbis
+    # libtoolize --force --copy
     # aclocal
     # autoconf
     # automake
-    ./autogen.sh 
+    # ./autogen.sh 
 
     cd ~/advancedtomato/release/src-rt
 
