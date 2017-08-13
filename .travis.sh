@@ -702,7 +702,8 @@ sudo  make install
 
 build_tomato()
 {
-
+    echo ======================================
+    which cp
 
     cd ~/advancedtomato/release/src-rt
 
