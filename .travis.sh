@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-export PATH=$PATH:/opt/brcm/hndtools-mipsel-linux/bin:/opt/brcm/hndtools-mipsel-uclibc/bin
+export PATH=/usr/local/bin:$PATH:/opt/brcm/hndtools-mipsel-linux/bin:/opt/brcm/hndtools-mipsel-uclibc/bin
 
 pre_build_prep()
 {
