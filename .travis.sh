@@ -14,7 +14,7 @@ pre_build_prep()
 {
 cd ~
 
-git clone -b travis https://github.com/oglops/advancedtomato.git
+git clone -b fedora https://github.com/oglops/advancedtomato.git
 git clone -b v3.4-140 https://github.com/oglops/advancedtomato-gui.git
 
 sudo ln -s ~/advancedtomato/tools/brcm /opt/brcm
@@ -91,7 +91,7 @@ cd libtool-2.4.6*
 sh configure # --prefix=/usr
 sudo  make install
 
-# echo /usr/share/aclocal | sudo tee --append /usr/local/share/aclocal/dirlist
+echo /usr/share/aclocal | sudo tee --append /usr/local/share/aclocal/dirlist
 
 # echo =========== dirlist ===========
 
@@ -102,6 +102,8 @@ ls /usr/local/share/aclocal/
 
 echo =========== /usr/share/aclocal ===========
 ls /usr/share/aclocal
+
+sudo ln -s /usr/local/share/aclocal  /usr/local/share/aclocal-
 
 }
 
