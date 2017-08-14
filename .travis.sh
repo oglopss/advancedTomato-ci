@@ -3,7 +3,13 @@ export PATH=/usr/local/bin:$PATH:/opt/brcm/hndtools-mipsel-linux/bin:/opt/brcm/h
 
 echo ========== custom path ============
 echo $PATH
+    
 
+# libtool bug fix for libvorbis
+export echo=echo
+
+
+    
 pre_build_prep()
 {
 cd ~
@@ -91,10 +97,7 @@ build_tomato()
     ls -l router/mysql
 
 
-    
 
-    # libtool bug fix for libvorbis
-    export echo=echo
 
 
     # https://bugs.archlinux.org/task/10012
