@@ -91,11 +91,11 @@ cd libtool-2.4.6*
 sh configure # --prefix=/usr
 sudo  make install
 
-echo /usr/share/aclocal | sudo tee --append /usr/local/share/aclocal/dirlist
+# echo /usr/share/aclocal | sudo tee --append /usr/local/share/aclocal/dirlist
 
-echo =========== dirlist ===========
+# echo =========== dirlist ===========
 
-cat /usr/local/share/aclocal/dirlist
+# cat /usr/local/share/aclocal/dirlist
 
 echo =========== usr/local/share/aclocal ===========
 ls /usr/local/share/aclocal/
