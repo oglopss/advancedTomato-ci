@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+export PATH=$PATH:/opt/brcm/hndtools-mipsel-linux/bin:/opt/brcm/hndtools-mipsel-uclibc/bin
 
 pre_build_prep()
 {
@@ -7,8 +8,7 @@ cd ~
 git clone -b fedora https://github.com/oglops/advancedtomato.git
 git clone -b v3.4-140 https://github.com/oglops/advancedtomato-gui.git
 
-
-
+sudo ln -s ~/advancedtomato/tools/brcm /opt/brcm
 
 rsync -rpv --ignore-times  ./advancedtomato-gui/*  ./advancedtomato/release/src-rt/router/www/  --exclude .git
 
@@ -88,11 +88,10 @@ build_tomato()
     ls -l router/mysql
 
 
-    sudo ln -s ~/advancedtomato/tools/brcm /opt/brcm
-    export PATH=$PATH:/opt/brcm/hndtools-mipsel-linux/bin:/opt/brcm/hndtools-mipsel-uclibc/bin
+    
 
     # libtool bug fix for libvorbis
-    export echo=echo
+    # export echo=echo
 
 
     # https://bugs.archlinux.org/task/10012
