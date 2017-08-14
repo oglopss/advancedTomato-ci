@@ -94,7 +94,7 @@ build_tomato()
     
 
     # libtool bug fix for libvorbis
-    # export echo=echo
+    export echo=echo
 
 
     # https://bugs.archlinux.org/task/10012
