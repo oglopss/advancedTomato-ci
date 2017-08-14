@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-export PATH=/usr/local/bin:$PATH:/opt/brcm/hndtools-mipsel-linux/bin:/opt/brcm/hndtools-mipsel-uclibc/bin
+export PATH=$PATH:/opt/brcm/hndtools-mipsel-linux/bin:/opt/brcm/hndtools-mipsel-uclibc/bin
 
 echo ========== custom path ============
 echo $PATH
@@ -9,7 +9,7 @@ echo $PATH
 export echo=echo
 
 
-    
+
 pre_build_prep()
 {
 cd ~
@@ -50,6 +50,22 @@ tar xf automake-1.11.tar.gz
 cd automake-1.11
 sh configure #--prefix /usr
 sudo make install
+
+
+cd ~
+wget http://ftp.gnu.org/gnu/automake/automake-1.12.tar.gz
+tar xf automake-1.12.tar.gz
+cd automake-1.12
+sh configure #--prefix /usr
+sudo make install
+
+cd ~
+wget http://ftp.gnu.org/gnu/automake/automake-1.8.tar.gz
+tar xf automake-1.8.tar.gz
+cd automake-1.8
+sh configure #--prefix /usr
+sudo make install
+
 
 
 cd ~
