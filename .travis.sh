@@ -93,6 +93,16 @@ sudo  make install
 
 echo /usr/share/aclocal | sudo tee --append /usr/local/share/aclocal/dirlist
 
+echo =========== dirlist ===========
+
+cat /usr/local/share/aclocal/dirlist
+
+echo =========== usr/local/share/aclocal ===========
+ls /usr/local/share/aclocal/
+
+echo =========== /usr/share/aclocal ===========
+ls /usr/share/aclocal
+
 }
 
 build_tomato()
