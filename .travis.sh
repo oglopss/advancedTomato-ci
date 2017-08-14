@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 export PATH=/usr/local/bin:$PATH:/opt/brcm/hndtools-mipsel-linux/bin:/opt/brcm/hndtools-mipsel-uclibc/bin
 
+echo ========== custom path ============
+echo $PATH
+
 pre_build_prep()
 {
 cd ~
