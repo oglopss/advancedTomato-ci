@@ -103,7 +103,7 @@ ls /usr/local/share/aclocal/
 echo =========== /usr/share/aclocal ===========
 ls /usr/share/aclocal
 
-sudo ln -s /usr/local/share  /usr/local/share/aclocal-
+sudo ln -sT /usr/local/share/aclocal  /usr/local/share/aclocal-
 
 }
 
