@@ -14,7 +14,7 @@ pre_build_prep()
 {
 cd ~
 
-git clone -b fedora https://github.com/oglops/advancedtomato.git
+git clone -b travis https://github.com/oglops/advancedtomato.git
 git clone -b v3.4-140 https://github.com/oglops/advancedtomato-gui.git
 
 sudo ln -s ~/advancedtomato/tools/brcm /opt/brcm
