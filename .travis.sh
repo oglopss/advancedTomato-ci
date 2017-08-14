@@ -92,7 +92,6 @@ sh configure # --prefix=/usr
 sudo  make install
 
 echo /usr/share/aclocal | sudo tee --append /usr/local/share/aclocal/dirlist
-1
 
 }
 
