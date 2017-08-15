@@ -64,12 +64,10 @@ sudo make install
 
 
 wget http://ftp.gnu.org/gnu/automake/automake-1.15.tar.gz
-tar xf automake*
+tar xf automake-1.15
 cd automake-1.15
 sh configure #--prefix /usr
 sudo make install
-
-
 
 
 cd ~
