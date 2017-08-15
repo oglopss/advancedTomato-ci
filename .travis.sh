@@ -24,16 +24,12 @@ rsync -rpv --ignore-times  ./advancedtomato-gui/*  ./advancedtomato/release/src-
 cd advancedtomato/release/src-rt
 
 
-wget http://ftp.gnu.org/gnu/automake/automake-1.15.tar.gz
-tar xf automake*
-cd automake-1.15
-sh configure #--prefix /usr
-sudo make install
+
 
 cd ~
-wget http://ftp.gnu.org/gnu/automake/automake-1.13.4.tar.gz
-tar xf automake-1.13.4.tar.gz
-cd automake-1.13.4
+wget http://ftp.gnu.org/gnu/automake/automake-1.8.tar.gz
+tar xf automake-1.8.tar.gz
+cd automake-1.8
 sh configure #--prefix /usr
 sudo make install
 
@@ -60,20 +56,20 @@ sh configure #--prefix /usr
 sudo make install
 
 cd ~
-wget http://ftp.gnu.org/gnu/automake/automake-1.8.tar.gz
-tar xf automake-1.8.tar.gz
-cd automake-1.8
+wget http://ftp.gnu.org/gnu/automake/automake-1.13.4.tar.gz
+tar xf automake-1.13.4.tar.gz
+cd automake-1.13.4
 sh configure #--prefix /usr
 sudo make install
 
 
-
-cd ~
-wget http://ftp.gnu.org/gnu/autoconf/autoconf-2.69.tar.gz 
-tar xf autoconf-2.69
-cd autoconf-2.69
+wget http://ftp.gnu.org/gnu/automake/automake-1.15.tar.gz
+tar xf automake*
+cd automake-1.15
 sh configure #--prefix /usr
-sudo  make install
+sudo make install
+
+
 
 
 cd ~
@@ -83,6 +79,16 @@ cd autoconf-2.63
 sh configure #--prefix /usr
 sudo  make install
 
+cd ~
+wget http://ftp.gnu.org/gnu/autoconf/autoconf-2.69.tar.gz 
+tar xf autoconf-2.69
+cd autoconf-2.69
+sh configure #--prefix /usr
+sudo  make install
+
+
+
+
 
 cd ~
 wget http://gnu.mirror.globo.tech/libtool/libtool-2.4.6.tar.gz
@@ -91,7 +97,7 @@ cd libtool-2.4.6*
 sh configure # --prefix=/usr
 sudo  make install
 
-echo /usr/share/aclocal | sudo tee --append /usr/local/share/aclocal/dirlist
+# echo /usr/share/aclocal | sudo tee --append /usr/local/share/aclocal/dirlist
 
 # echo =========== dirlist ===========
 
@@ -103,7 +109,7 @@ ls /usr/local/share/aclocal/
 echo =========== /usr/share/aclocal ===========
 ls /usr/share/aclocal
 
-sudo ln -sT /usr/share/aclocal  /usr/local/share/aclocal-
+# sudo ln -sT /usr/share/aclocal  /usr/local/share/aclocal-
 
 }
 
