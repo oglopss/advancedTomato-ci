@@ -47,6 +47,7 @@ addons:
             - automake
             - libstdc++6 
             - net-tools
+            - perl
 
 # Handle git submodules yourself
 git:
