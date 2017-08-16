@@ -64,7 +64,7 @@ cd advancedtomato/release/src-rt
 
 cd ~
 wget http://ftp.gnu.org/gnu/automake/automake-1.15.tar.gz
-tar xf automake-1.15
+tar xf automake-1.15.tar.gz
 cd automake-1.15
 sh configure #--prefix /usr
 sudo make install
@@ -72,21 +72,21 @@ sudo make install
 
 # cd ~
 # wget http://ftp.gnu.org/gnu/autoconf/autoconf-2.63.tar.gz 
-# tar xf autoconf-2.63
+# tar xf autoconf-2.63.tar.gz
 # cd autoconf-2.63
 # sh configure #--prefix /usr
 # sudo  make install
 
 # cd ~
 # wget http://ftp.gnu.org/gnu/autoconf/autoconf-2.69.tar.gz 
-# tar xf autoconf-2.69
+# tar xf autoconf-2.69.tar.gz
 # cd autoconf-2.69
 # sh configure #--prefix /usr
 # sudo  make install
 
 # cd ~
 # wget http://gnu.mirror.globo.tech/libtool/libtool-2.4.6.tar.gz
-# tar xvf libtool-2.4.6*
+# tar xvf libtool-2.4.6.tar.gz
 # cd libtool-2.4.6*
 # sh configure # --prefix=/usr
 # sudo  make install
