@@ -77,12 +77,12 @@ cd autoconf-2.63
 sh configure --prefix /usr
 sudo  make install
 
-# cd ~
-# wget http://ftp.gnu.org/gnu/autoconf/autoconf-2.69.tar.gz 
-# tar xf autoconf-2.69.tar.gz
-# cd autoconf-2.69
-# sh configure #--prefix /usr
-# sudo  make install
+cd ~
+wget http://ftp.gnu.org/gnu/autoconf/autoconf-2.69.tar.gz 
+tar xf autoconf-2.69.tar.gz
+cd autoconf-2.69
+sh configure #--prefix /usr
+sudo  make install
 
 cd ~
 wget http://gnu.mirror.globo.tech/libtool/libtool-2.4.6.tar.gz
