@@ -56,9 +56,9 @@ cd advancedtomato/release/src-rt
 # sudo make install
 
 cd ~
-wget http://ftp.gnu.org/gnu/automake/automake-1.13.tar.gz
-tar xf automake-1.13.tar.gz
-cd automake-1.13
+wget http://ftp.gnu.org/gnu/automake/automake-1.13.4.tar.gz
+tar xf automake-1.13.4.tar.gz
+cd automake-1.13.4
 sh configure --prefix /usr
 sudo make install
 
