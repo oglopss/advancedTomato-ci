@@ -144,9 +144,10 @@ build_tomato()
     echo ======after make=========
     ls -l 
 
-    # echo ======config.log=========
-    # cat router/mysql/config.log
-    
     echo ======config.log=========
-    cat ./config.log    
+    echo pwd
+    cat ./router/mysql/config.log
+
+    # echo ======config.log=========
+    # cat ./config.log    
 }
