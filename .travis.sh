@@ -145,8 +145,15 @@ build_tomato()
     ls -l 
 
     echo ======config.log=========
-    echo pwd
+    echo `pwd`
+    pwd
     cat ./router/mysql/config.log
+
+    echo ======configure.mipsel=========
+    cat ./router/mysql/configure.mipsel
+
+    echo ======configure=========
+    cat ./router/mysql/configure
 
     # echo ======config.log=========
     # cat ./config.log    
