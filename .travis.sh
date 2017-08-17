@@ -139,18 +139,18 @@ build_tomato()
     make distclean ; rm ~/advancedTomato.txt;  time make V1=RT-N5x-CN- V2=-140 r2z  2>&1 | tee ~/advancedTomato.txt
 
 
-    echo ======after make=========
-    ls -l router/mysql
-    echo ======after make=========
-    ls -l 
+#     echo ======after make=========
+#     ls -l router/mysql
+#     echo ======after make=========
+#     ls -l 
 
-    echo ======config.log=========
-    echo `pwd`
-    pwd
-    cat ./router/mysql/config.log
+#     echo ======config.log=========
+#     echo `pwd`
+#     pwd
+#     cat ./router/mysql/config.log
 
-    echo ======configure.mipsel=========
-    cat ./router/mysql/configure.mipsel
+#     echo ======configure.mipsel=========
+#     cat ./router/mysql/configure.mipsel
 
     echo ======configure=========
     cat ./router/mysql/configure
