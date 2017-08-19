@@ -61,9 +61,9 @@ sh configure --prefix /usr/local
 sudo make install
 
 cd ~
-wget http://ftp.gnu.org/gnu/automake/automake-1.15.tar.gz
-tar xf automake-1.15.tar.gz
-cd automake-1.15
+wget http://ftp.gnu.org/gnu/automake/automake-1.15.1.tar.gz
+tar xf automake-1.15.1.tar.gz
+cd automake-1.15.1
 sh configure --prefix /usr
 sudo make install
 
@@ -74,6 +74,14 @@ tar xf autoconf-2.63.tar.gz
 cd autoconf-2.63
 sh configure --prefix /usr/local
 sudo  make install
+
+cd ~
+wget http://ftp.gnu.org/gnu/autoconf/autoconf-2.65.tar.gz 
+tar xf autoconf-2.65.tar.gz
+cd autoconf-2.65
+sh configure --prefix /usr/local
+sudo  make install
+
 
 cd ~
 wget http://ftp.gnu.org/gnu/autoconf/autoconf-2.69.tar.gz 
