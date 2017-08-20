@@ -24,78 +24,68 @@ rsync -rpv --ignore-times  ./advancedtomato-gui/*  ./advancedtomato/release/src-
 cd advancedtomato/release/src-rt
 
 
+# ==========libvorbis error ==========
+
 # cd ~
-# wget http://ftp.gnu.org/gnu/automake/automake-1.8.tar.gz
-# tar xf automake-1.8.tar.gz
-# cd automake-1.8
-# sh configure #--prefix /usr
+# wget http://ftp.gnu.org/gnu/automake/automake-1.10.1.tar.gz
+# tar xf automake-1.10.1.tar.gz
+# cd automake-1.10.1
+# sh configure --prefix /usr
 # sudo make install
 
-cd ~
-wget http://ftp.gnu.org/gnu/automake/automake-1.10.1.tar.gz
-tar xf automake-1.10.1.tar.gz
-cd automake-1.10.1
-sh configure --prefix /usr
-sudo make install
-
-cd ~
-wget http://ftp.gnu.org/gnu/automake/automake-1.11.tar.gz
-tar xf automake-1.11.tar.gz
-cd automake-1.11
-sh configure --prefix /usr
-sudo make install
-
-
 # cd ~
-# wget http://ftp.gnu.org/gnu/automake/automake-1.12.tar.gz
-# tar xf automake-1.12.tar.gz
-# cd automake-1.12
-# sh configure #--prefix /usr
+# wget http://ftp.gnu.org/gnu/automake/automake-1.11.tar.gz
+# tar xf automake-1.11.tar.gz
+# cd automake-1.11
+# sh configure --prefix /usr
 # sudo make install
 
-cd ~
-wget http://ftp.gnu.org/gnu/automake/automake-1.13.4.tar.gz
-tar xf automake-1.13.4.tar.gz
-cd automake-1.13.4
-sh configure --prefix /usr
-sudo make install
-
-cd ~
-wget http://ftp.gnu.org/gnu/automake/automake-1.15.1.tar.gz
-tar xf automake-1.15.1.tar.gz
-cd automake-1.15.1
-sh configure --prefix /usr
-sudo make install
-
-
-cd ~
-wget http://ftp.gnu.org/gnu/autoconf/autoconf-2.63.tar.gz 
-tar xf autoconf-2.63.tar.gz
-cd autoconf-2.63
-sh configure --prefix /usr
-sudo  make install
+# cd ~
+# wget http://ftp.gnu.org/gnu/automake/automake-1.13.4.tar.gz
+# tar xf automake-1.13.4.tar.gz
+# cd automake-1.13.4
+# sh configure --prefix /usr
+# sudo make install
 
 # cd ~
-# wget http://ftp.gnu.org/gnu/autoconf/autoconf-2.65.tar.gz 
-# tar xf autoconf-2.65.tar.gz
-# cd autoconf-2.65
+# wget http://ftp.gnu.org/gnu/automake/automake-1.15.1.tar.gz
+# tar xf automake-1.15.1.tar.gz
+# cd automake-1.15.1
+# sh configure --prefix /usr
+# sudo make install
+
+
+# cd ~
+# wget http://ftp.gnu.org/gnu/autoconf/autoconf-2.63.tar.gz 
+# tar xf autoconf-2.63.tar.gz
+# cd autoconf-2.63
 # sh configure --prefix /usr
 # sudo  make install
 
+# cd ~
+# wget http://ftp.gnu.org/gnu/autoconf/autoconf-2.69.tar.gz 
+# tar xf autoconf-2.69.tar.gz
+# cd autoconf-2.69
+# sh configure --prefix /usr
+# sudo  make install
 
-cd ~
-wget http://ftp.gnu.org/gnu/autoconf/autoconf-2.69.tar.gz 
-tar xf autoconf-2.69.tar.gz
-cd autoconf-2.69
-sh configure --prefix /usr
-sudo  make install
+# cd ~
+# wget http://gnu.mirror.globo.tech/libtool/libtool-2.4.6.tar.gz
+# tar xvf libtool-2.4.6.tar.gz
+# cd libtool-2.4.6
+# sh configure --prefix=/usr
+# sudo  make install
 
-cd ~
-wget http://gnu.mirror.globo.tech/libtool/libtool-2.4.6.tar.gz
-tar xvf libtool-2.4.6.tar.gz
-cd libtool-2.4.6
-sh configure --prefix=/usr
-sudo  make install
+
+# try same version in local travis
+
+echo =========== autotools versions ===========
+dpkg -l | grep "autogen\|autoconf\|automake\|libtool"
+
+
+
+
+
 
 # echo /usr/share/aclocal | sudo tee --append /usr/local/share/aclocal/dirlist
 
