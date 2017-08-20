@@ -82,7 +82,27 @@ cd advancedtomato/release/src-rt
 echo =========== autotools versions ===========
 dpkg -l | grep "autogen\|autoconf\|automake\|libtool"
 
+# official image verions
+# =========== autotools versions ===========
+# ii  autoconf                           2.69-6                                     all          automatic configure script builder
+# ii  autogen                            1:5.18-2ubuntu2                            amd64        automated text file generator
+# ii  automake                           1:1.14.1-2ubuntu1                          all          Tool for generating GNU Standards-compliant Makefiles
+# ii  libltdl-dev:amd64                  2.4.2-1.7ubuntu1                           amd64        A system independent dlopen wrapper for GNU libtool
+# ii  libltdl7:amd64                     2.4.2-1.7ubuntu1                           amd64        A system independent dlopen wrapper for GNU libtool
+# ii  libopts25:amd64                    1:5.18-2ubuntu2                            amd64        automated option processing library based on autogen
+# ii  libopts25-dev                      1:5.18-2ubuntu2                            amd64        automated option processing library based on autogen
+# ii  libtool                            2.4.2-1.7ubuntu1                           amd64        Generic library support script
 
+
+# local version
+# i  autoconf                            2.68-1ubuntu2                                       automatic configure script builder
+# ii  autogen                             1:5.12-0.1ubuntu1                                   automated text file generator
+# ii  automake                            1:1.11.3-1ubuntu2                                   Tool for generating GNU Standards-compliant Makefiles
+# ii  libltdl-dev                         2.4.2-1ubuntu1                                      A system independent dlopen wrapper for GNU libtool
+# ii  libltdl7                            2.4.2-1ubuntu1                                      A system independent dlopen wrapper for GNU libtool
+# ii  libopts25                           1:5.12-0.1ubuntu1                                   automated option processing library based on autogen
+# ii  libopts25-dev                       1:5.12-0.1ubuntu1                                   automated option processing library based on autogen
+# ii  libtool                             2.4.2-1ubuntu1                                      Generic library support script
 
 
 

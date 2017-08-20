@@ -42,9 +42,9 @@ addons:
             - libncurses5
             - libgmp-dev 
             - nettle-dev
-            - libtool
-            - autogen
-            - automake
+            # - libtool
+            # - autogen
+            # - automake
             - libstdc++6 
             - net-tools
             - perl
