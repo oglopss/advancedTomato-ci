@@ -24,14 +24,16 @@ rsync -rpv --ignore-times  ./advancedtomato-gui/*  ./advancedtomato/release/src-
 cd advancedtomato/release/src-rt
 
 
+# is missing on your system
+
 # ==========libvorbis error ==========
 
-# cd ~
-# wget http://ftp.gnu.org/gnu/automake/automake-1.10.1.tar.gz
-# tar xf automake-1.10.1.tar.gz
-# cd automake-1.10.1
-# sh configure --prefix /usr
-# sudo make install
+cd ~
+wget http://ftp.gnu.org/gnu/automake/automake-1.10.tar.gz
+tar xf automake-1.10.tar.gz
+cd automake-1.10
+sh configure --prefix /usr
+sudo make install
 
 # cd ~
 # wget http://ftp.gnu.org/gnu/automake/automake-1.11.tar.gz
