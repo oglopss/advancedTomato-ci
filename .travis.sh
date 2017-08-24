@@ -15,6 +15,7 @@ pre_build_prep()
 cd ~
 
 sudo pip install certifi
+sudo pip install requests -U
 
 git clone -b travis https://github.com/oglops/advancedtomato.git
 git clone -b v3.4-140 https://github.com/oglops/advancedtomato-gui.git
