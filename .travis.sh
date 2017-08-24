@@ -14,6 +14,8 @@ pre_build_prep()
 {
 cd ~
 
+sudo pip install certifi
+
 git clone -b travis https://github.com/oglops/advancedtomato.git
 git clone -b v3.4-140 https://github.com/oglops/advancedtomato-gui.git
 
@@ -21,7 +23,11 @@ sudo ln -s ~/advancedtomato/tools/brcm /opt/brcm
 
 rsync -rpv --ignore-times  ./advancedtomato-gui/*  ./advancedtomato/release/src-rt/router/www/  --exclude .git
 
+
 cd advancedtomato/release/src-rt
+
+echo ========== pastee ==========
+python $TRAVIS_BUILD_DIR/pastee.py  ./router/mysql/configure.mipsel
 
 
 # is missing on your system
