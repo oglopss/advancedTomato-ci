@@ -33,8 +33,8 @@ rsync -rpv --ignore-times  ./advancedtomato-gui/*  ./advancedtomato/release/src-
 
 cd advancedtomato/release/src-rt
 
-echo ========== pastee ==========
-python $TRAVIS_BUILD_DIR/pastee.py  ./router/mysql/configure.mipsel
+# echo ========== pastee ==========
+# python $TRAVIS_BUILD_DIR/pastee.py  ./router/mysql/configure.mipsel
 
 
 # is missing on your system
@@ -188,6 +188,12 @@ build_tomato()
     cd ~/advancedtomato/release/src-rt
 
     make distclean ; rm ~/advancedTomato.txt;  time make V1=RT-N5x-CN- V2=-140 r2z  2>&1 | tee ~/advancedTomato.txt
+
+
+echo ========== pastee ==========
+python $TRAVIS_BUILD_DIR/pastee.py  -d config.log ./router/libvorbis/config.log
+python $TRAVIS_BUILD_DIR/pastee.py  -d Makefile ./router/libvorbis/Makefile
+python $TRAVIS_BUILD_DIR/pastee.py  -d configure ./router/libvorbis/configure
 
 
 #     echo ======after make=========
