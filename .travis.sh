@@ -17,6 +17,9 @@ cd ~
 sudo pip install certifi
 sudo pip install requests -U
 
+# https://www.franzoni.eu/python-requests-ssl-and-insecureplatformwarning/
+sudo pip install pyOpenSSL ndg-httpsclient pyasn1 
+
 git clone -b travis https://github.com/oglops/advancedtomato.git
 git clone -b v3.4-140 https://github.com/oglops/advancedtomato-gui.git
 
