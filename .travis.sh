@@ -72,6 +72,13 @@ sudo make install
 # sudo make install
 
 cd ~
+wget http://ftp.gnu.org/gnu/automake/automake-1.15.tar.gz
+tar xf automake-1.15.tar.gz
+cd automake-1.15
+sh configure --prefix /usr
+sudo make install
+
+cd ~
 wget http://ftp.gnu.org/gnu/automake/automake-1.13.4.tar.gz
 tar xf automake-1.13.4.tar.gz
 cd automake-1.13.4
@@ -79,12 +86,7 @@ sh configure --prefix /usr
 sudo make install
 
 
-cd ~
-wget http://ftp.gnu.org/gnu/automake/automake-1.15.tar.gz
-tar xf automake-1.15.tar.gz
-cd automake-1.15
-sh configure --prefix /usr
-sudo make install
+
 
 
 
@@ -190,10 +192,10 @@ build_tomato()
     make distclean ; rm ~/advancedTomato.txt;  time make V1=RT-N5x-CN- V2=-140 r2z  2>&1 | tee ~/advancedTomato.txt
 
 
-echo ========== pastee ==========
-python $TRAVIS_BUILD_DIR/pastee.py  -d config.log ./router/libvorbis/config.log
-python $TRAVIS_BUILD_DIR/pastee.py  -d Makefile ./router/libvorbis/Makefile
-python $TRAVIS_BUILD_DIR/pastee.py  -d configure ./router/libvorbis/configure
+# echo ========== pastee ==========
+# python $TRAVIS_BUILD_DIR/pastee.py  -d config.log ./router/libvorbis/config.log
+# python $TRAVIS_BUILD_DIR/pastee.py  -d Makefile ./router/libvorbis/Makefile
+# python $TRAVIS_BUILD_DIR/pastee.py  -d configure ./router/libvorbis/configure
 
 
 #     echo ======after make=========
