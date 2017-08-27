@@ -7,7 +7,7 @@ echo $PATH
 echo ========== touch ============
 echo `which touch`
 which touch
-
+which sleep
 
 
 # libtool bug fix for libvorbis
