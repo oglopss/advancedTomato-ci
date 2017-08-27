@@ -69,6 +69,7 @@ wget http://ftp.gnu.org/gnu/automake/automake-1.11.tar.gz
 tar xf automake-1.11.tar.gz
 cd automake-1.11
 sh configure --prefix /usr
+make
 sudo make install
 
 
@@ -78,6 +79,7 @@ wget http://ftp.gnu.org/gnu/automake/automake-1.15.tar.gz
 tar xf automake-1.15.tar.gz
 cd automake-1.15
 sh configure --prefix /usr
+make
 sudo make install
 
 
@@ -86,6 +88,7 @@ wget http://ftp.gnu.org/gnu/automake/automake-1.13.4.tar.gz
 tar xf automake-1.13.4.tar.gz
 cd automake-1.13.4
 sh configure --prefix /usr
+make
 sudo make install
 
 
@@ -113,6 +116,7 @@ wget http://ftp.gnu.org/gnu/autoconf/autoconf-2.69.tar.gz
 tar xf autoconf-2.69.tar.gz
 cd autoconf-2.69
 sh configure --prefix /usr
+make
 sudo  make install
 
 
@@ -130,6 +134,7 @@ wget http://gnu.mirror.globo.tech/libtool/libtool-2.4.6.tar.gz
 tar xvf libtool-2.4.6.tar.gz
 cd libtool-2.4.6
 sh configure --prefix=/usr
+make
 sudo  make install
 
 

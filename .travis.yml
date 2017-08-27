@@ -48,7 +48,7 @@ addons:
             - libstdc++6 
             - net-tools
             - perl
-            - python
+            # - python
 
 # Handle git submodules yourself
 git:
