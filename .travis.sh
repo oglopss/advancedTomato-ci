@@ -90,13 +90,13 @@ sudo make install
 
 
 
-
-# cd ~
-# wget http://ftp.gnu.org/gnu/autoconf/autoconf-2.63.tar.gz 
-# tar xf autoconf-2.63.tar.gz
-# cd autoconf-2.63
-# sh configure --prefix /usr
-# sudo  make install
+# mysql warns for this
+cd ~
+wget http://ftp.gnu.org/gnu/autoconf/autoconf-2.63.tar.gz 
+tar xf autoconf-2.63.tar.gz
+cd autoconf-2.63
+sh configure --prefix /usr
+sudo  make install
 
 # cd ~
 # wget http://ftp.gnu.org/gnu/autoconf/autoconf-2.68.tar.gz 
