@@ -96,6 +96,7 @@ wget http://ftp.gnu.org/gnu/autoconf/autoconf-2.63.tar.gz
 tar xf autoconf-2.63.tar.gz
 cd autoconf-2.63
 sh configure --prefix /usr
+make
 sudo  make install
 
 # cd ~
