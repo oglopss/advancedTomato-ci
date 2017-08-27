@@ -3,7 +3,12 @@ export PATH=$PATH:/opt/brcm/hndtools-mipsel-linux/bin:/opt/brcm/hndtools-mipsel-
 
 echo ========== custom path ============
 echo $PATH
-    
+   
+echo ========== touch ============
+echo `which touch`
+which touch
+
+
 
 # libtool bug fix for libvorbis
 export echo=echo
@@ -199,7 +204,6 @@ build_tomato()
 
     echo ======after=========
     ls -l router/mysql
-
 
 
 
