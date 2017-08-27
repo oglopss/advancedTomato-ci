@@ -41,12 +41,12 @@ cd advancedtomato/release/src-rt
 
 # ==========libvorbis error ==========
 
-cd ~
-wget http://ftp.gnu.org/gnu/automake/automake-1.10.tar.gz
-tar xf automake-1.10.tar.gz
-cd automake-1.10
-sh configure --prefix /usr
-sudo make install
+# cd ~
+# wget http://ftp.gnu.org/gnu/automake/automake-1.10.tar.gz
+# tar xf automake-1.10.tar.gz
+# cd automake-1.10
+# sh configure --prefix /usr
+# sudo make install
 
 # cd ~
 # wget http://ftp.gnu.org/gnu/automake/automake-1.12.tar.gz
@@ -64,20 +64,13 @@ sudo make install
 # sudo make install
 
 
-# cd ~
-# wget http://ftp.gnu.org/gnu/automake/automake-1.11.tar.gz
-# tar xf automake-1.11.tar.gz
-# cd automake-1.11
-# sh configure --prefix /usr
-# sudo make install
-
-
 cd ~
-wget http://ftp.gnu.org/gnu/automake/automake-1.13.4.tar.gz
-tar xf automake-1.13.4.tar.gz
-cd automake-1.13.4
+wget http://ftp.gnu.org/gnu/automake/automake-1.11.tar.gz
+tar xf automake-1.11.tar.gz
+cd automake-1.11
 sh configure --prefix /usr
 sudo make install
+
 
 
 cd ~
@@ -88,6 +81,16 @@ sh configure --prefix /usr
 sudo make install
 
 
+cd ~
+wget http://ftp.gnu.org/gnu/automake/automake-1.13.4.tar.gz
+tar xf automake-1.13.4.tar.gz
+cd automake-1.13.4
+sh configure --prefix /usr
+sudo make install
+
+
+
+
 # cd ~
 # wget http://ftp.gnu.org/gnu/autoconf/autoconf-2.63.tar.gz 
 # tar xf autoconf-2.63.tar.gz
@@ -95,28 +98,38 @@ sudo make install
 # sh configure --prefix /usr
 # sudo  make install
 
+# cd ~
+# wget http://ftp.gnu.org/gnu/autoconf/autoconf-2.68.tar.gz 
+# tar xf autoconf-2.68.tar.gz
+# cd autoconf-2.68
+# sh configure --prefix /usr
+# sudo  make install
+
+
+
 cd ~
-wget http://ftp.gnu.org/gnu/autoconf/autoconf-2.68.tar.gz 
-tar xf autoconf-2.68.tar.gz
-cd autoconf-2.68
+wget http://ftp.gnu.org/gnu/autoconf/autoconf-2.69.tar.gz 
+tar xf autoconf-2.69.tar.gz
+cd autoconf-2.69
 sh configure --prefix /usr
 sudo  make install
 
 
-cd ~
-wget http://gnu.mirror.globo.tech/libtool/libtool-2.4.2.tar.gz
-tar xvf libtool-2.4.2.tar.gz
-cd libtool-2.4.2
-sh configure --prefix=/usr
-sudo  make install
-
 
 # cd ~
-# wget http://gnu.mirror.globo.tech/libtool/libtool-2.4.6.tar.gz
-# tar xvf libtool-2.4.6.tar.gz
-# cd libtool-2.4.6
+# wget http://gnu.mirror.globo.tech/libtool/libtool-2.4.2.tar.gz
+# tar xvf libtool-2.4.2.tar.gz
+# cd libtool-2.4.2
 # sh configure --prefix=/usr
 # sudo  make install
+
+
+cd ~
+wget http://gnu.mirror.globo.tech/libtool/libtool-2.4.6.tar.gz
+tar xvf libtool-2.4.6.tar.gz
+cd libtool-2.4.6
+sh configure --prefix=/usr
+sudo  make install
 
 
 # try same version in local travis
