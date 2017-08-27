@@ -19,7 +19,7 @@ pre_build_prep()
 {
 cd ~
 
-sudo pip install certifi - U
+sudo pip install certifi -U
 
 
 # https://www.franzoni.eu/python-requests-ssl-and-insecureplatformwarning/
