@@ -220,7 +220,36 @@ build_tomato()
 
     cd ~/advancedtomato/release/src-rt
 
-    make distclean ; rm ~/advancedTomato.txt;  time make V1=RT-N5x-CN- V2=-140 r2z  2>&1 | tee ~/advancedTomato.txt
+#     make distclean ; rm ~/advancedTomato.txt;  time make V1=RT-N5x-CN- V2=-140 r2z  2>&1 | tee ~/advancedTomato.txt
+#     make distclean
+#     rm ~/advancedTomato.txt;  
+    time make V1=RT-N5x-CN- V2=-140 r2z  > ~/advancedTomato.txt
+
+    local build_pid=$!
+
+    # Start a runner task to print a "still running" line every 5 minutes
+    # to avoid travis to think that the build is stuck
+    {
+        while true
+        do
+            sleep 300
+            printf "Crosstool-NG is still running ...\r"
+        done
+    } &
+    local runner_pid=$!
+
+    # Wait for the build to finish and get the result
+    wait $build_pid 2>/dev/null 
+    local result=$?
+
+    # Stop the runner task
+    kill $runner_pid
+    wait $runner_pid 2>/dev/null
+
+    # Return the result
+    return $result
+    
+
 
 
 # echo ========== pastee ==========
