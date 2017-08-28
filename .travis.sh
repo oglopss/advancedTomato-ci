@@ -8,7 +8,8 @@ echo ========== touch ============
 echo `which touch`
 which touch
 which sleep
-
+date
+time
 
 # libtool bug fix for libvorbis
 export echo=echo
