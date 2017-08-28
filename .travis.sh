@@ -4,11 +4,11 @@ export PATH=$PATH:/opt/brcm/hndtools-mipsel-linux/bin:/opt/brcm/hndtools-mipsel-
 echo ========== custom path ============
 echo $PATH
    
-echo ========== touch ============
-echo `which touch`
-which touch
-which sleep
-date
+# echo ========== touch ============
+# echo `which touch`
+# which touch
+# which sleep
+# date
 # time
 
 # libtool bug fix for libvorbis
