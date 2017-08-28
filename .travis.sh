@@ -9,7 +9,7 @@ echo `which touch`
 which touch
 which sleep
 date
-time
+# time
 
 # libtool bug fix for libvorbis
 export echo=echo
