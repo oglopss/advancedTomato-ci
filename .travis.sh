@@ -246,6 +246,10 @@ build_tomato()
     kill $runner_pid
     wait $runner_pid 2>/dev/null
 
+   echo ====== result =========
+   ls -l ~/advancedtomato/release/src-rt/images
+   
+
     # Return the result
     return $result
     
