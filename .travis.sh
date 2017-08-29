@@ -45,7 +45,8 @@ cd advancedtomato/release/src-rt
 
 # is missing on your system
 
-# ==========libvorbis error ==========
+echo ========== bison ==========
+apt-cache showpkg bison
 
 # cd ~
 # wget http://ftp.gnu.org/gnu/automake/automake-1.10.tar.gz
