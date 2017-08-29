@@ -249,6 +249,7 @@ build_tomato()
    echo ====== result =========
    ls -l ~/advancedtomato/release/image
    ls -l ~/advancedtomato/release/src-rt
+   ls -l ~/advancedtomato/release/src-rt/image
    
 
     # Return the result
