@@ -247,7 +247,8 @@ build_tomato()
     wait $runner_pid 2>/dev/null
 
    echo ====== result =========
-   ls -l ~/advancedtomato/release/src-rt/images
+   ls -l ~/advancedtomato/release/image
+   ls -l ~/advancedtomato/release/src-rt
    
 
     # Return the result
