@@ -36,6 +36,14 @@ sudo ln -s ~/advancedtomato/tools/brcm /opt/brcm
 
 rsync -rpv --ignore-times  ./advancedtomato-gui/*  ./advancedtomato/release/src-rt/router/www/  --exclude .git
 
+echo ========== bison ==========
+apt-cache showpkg bison
+
+cd ~
+wget http://launchpadlibrarian.net/140087283/libbison-dev_2.7.1.dfsg-1_amd64.deb
+wget http://launchpadlibrarian.net/140087282/bison_2.7.1.dfsg-1_amd64.deb
+sudo dpkg -i libbison-dev_2.7.1.dfsg-1_amd64.deb
+sudo dpkg -i bison_2.7.1.dfsg-1_amd64.deb
 
 cd advancedtomato/release/src-rt
 
@@ -44,9 +52,6 @@ cd advancedtomato/release/src-rt
 
 
 # is missing on your system
-
-echo ========== bison ==========
-apt-cache showpkg bison
 
 # cd ~
 # wget http://ftp.gnu.org/gnu/automake/automake-1.10.tar.gz
