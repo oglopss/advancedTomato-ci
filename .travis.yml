@@ -72,18 +72,18 @@ env:
     # - CT_SAMPLE=mipsel-unknown-linux-gnu
     matrix:
         # - export PATH=$HOME/x-tools/mipsel-unknown-linux-uclibc/bin:$PATH
-        - SS_VER=latest
+        - TT_BUILD=r2z
+        - TT_BUILD=r2j
 
     global:
-        - secure: UdSn/Ui6boo3CtxlxiluOCnTIVDcRAEPYc3780g8FnHCTopYCoFm1rugzXO009hXAKPN34hD0SxFI7iAfp/4Nd5uhRFCwhQC/WiLBXAzpdDKavqFvwCBActgZ2x6h5il4zVDxErpRoUDq3bpMwzA+vUcsQ3hH1xFz4Vhdoi8056Q027TbvjmkrxMADoguqIIhfZUKbXRNvsjjsxT0SyzRbN2algWGesrplHsz2ePY+Gm0QPf9r0ODtmoOwmY2apz/WSk28toUw4ihFHa5FHPQoDiT3C87nDP9R7d5Vu9usumWP34DqzJJO+XJDl6+20ZHVTNhxossi119uTp8tFoxUuoqpUIO65yhDwW3k5BMyi+BPJZQwvAxHb7upWd2uMkN8iOwj0z+ImW0lY314yp1R42gMyKljGxaZpbqwyp31vqHh/rKxzYwkILabzFeUu4TnM+iwqB/OeSST5zfuwFUfeCBjVRN9GgnBHOENCHecF9jXDq/W+XkY1J/vGXhAzEVOnD2LMXV9OWR9v5k5DS09w3DEJ+lTZ14wHk8wLEKtIdL2ynReJxTP6wycMUsHRoYLsD88wwerfZO9i3q7aYmmTha/gamDCdv2B9JpaiPTBsaxYUxXBS7KTc00ukzbbtWtv/KV2dXW/lrtpyYj3AEkrgjYDyQBjQDQA0cN5RZfk=
+        - secure: BRZVkQhpRpE8n7RZ0rZiZSnc2/HyTGyzhFF4iwQs9rXMsRmIVoAEf1vUDExckqI9reJrym+VJP3J3ib+xtczV6JB6C68JtKBWWibvNRTs9Ti2DwY05AYuSnE8opRuUzffv0kyWG3XK+0cW28/uy6lphSQ6uDG7m2Gp/pQrIQtJ42djGYzA6zWO7YS0fPhbgy/7QjxnIUXgavKBHFD53Wlnzw86NtviIDTeC234bpl9BgLJ23ueIdkX4g1kyWYX1ewSRuQOGFnjwcSofzOcMb/gQN4J3P00cWaLhlnl7AYQlkYE+shFTma8XI9+srgrQiakDI6tkOISiVP5zBo6iqw1q23ikObxPIjl28row4VKg3zBQxgD8COlp67YHnDCHp5kl0Nmpyc4/d6fFh72oH34gjDA/9UxaAyrRwKJsuwISoxs4YJskx0g3iSJb3X5V6ilmr1L0Mbk/Xlstd3OGZ4rx3OFBE2+CwQr9Ac2FvZ2vWmPifiUO/LcAZjmkO8DMeICBL7rdu8Z1+sSq2iwAsJaLF6jjaLatjflP/xpyoD++/r2sk/4//saClJA1RcflEvvX4KFMTd25zpaQxvBq1G62b0i0sc+BuWRroR3Vjyudb/ItzHbACeoUAxi/HA6Kqeo2j2STZTkcuKRzBwmW+H4CNafb6tojBMHQpu7apVeU=
         
 # Building the standard samples
 script:
     # - . ls -l $HOME
     - . $TRAVIS_BUILD_DIR/.travis.sh      # Load the travis environment
     - echo ============================
-    # - pre_build_prep > /dev/null
-    - pre_build_prep
+    - pre_build_prep > /dev/null
     - build_tomato
 
 # On failure displaying the last lines of the log file
