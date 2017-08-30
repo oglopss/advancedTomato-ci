@@ -230,31 +230,31 @@ build_tomato()
 #     make distclean
 #     rm ~/advancedTomato.txt;  
 
-    # time make V1=RT-N5x-CN- V2=-140 r2z  > ~/advancedTomato.txt
+    time make V1=RT-N5x-CN- V2=-140 r2z  > ~/advancedTomato.txt
 
-    make V1=RT-N5x-CN- V2=-140 r2z &
+    # make V1=RT-N5x-CN- V2=-140 r2z &
 
 
-    local build_pid=$!
+    # local build_pid=$!
 
-    # Start a runner task to print a "still running" line every 5 minutes
-    # to avoid travis to think that the build is stuck
-    {
-        while true
-        do
-            sleep 300
-            printf "Crosstool-NG is still running ...\r"
-        done
-    } &
-    local runner_pid=$!
+    # # Start a runner task to print a "still running" line every 5 minutes
+    # # to avoid travis to think that the build is stuck
+    # {
+    #     while true
+    #     do
+    #         sleep 300
+    #         printf "Crosstool-NG is still running ...\r"
+    #     done
+    # } &
+    # local runner_pid=$!
 
-    # Wait for the build to finish and get the result
-    wait $build_pid 2>/dev/null 
-    local result=$?
+    # # Wait for the build to finish and get the result
+    # wait $build_pid 2>/dev/null 
+    # local result=$?
 
-    # Stop the runner task
-    kill $runner_pid
-    wait $runner_pid 2>/dev/null
+    # # Stop the runner task
+    # kill $runner_pid
+    # wait $runner_pid 2>/dev/null
 
    echo ====== result =========
    ls -l ~/advancedtomato/release/image
@@ -263,7 +263,7 @@ build_tomato()
    
 
     # Return the result
-    return $result
+    # return $result
     
 
 
