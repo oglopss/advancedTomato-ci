@@ -75,7 +75,7 @@ push_changes()
   cat ./ss.yml
 
     #go into directory and copy data we're interested in to that directory
-  cd $HOME/gh-pages-$SS_VER
+  cd $HOME/gh-pages-$TT_BUILD
   mkdir -p download && cd download
   cp -Rf ~/advancedtomato/release/src-rt/image/tomato*.trx .
 
@@ -94,12 +94,12 @@ if grep -qe "build: $TRAVIS_BUILD_NUMBER$" ss.yml
 then
     # code if found
     # update files
-    if grep -qe "  - $SS_VER$" ss.yml
+    if grep -qe "  - $TT_BUILD$" ss.yml
     then
         echo files already inside skip
     else
         cat >> ss.yml <<EOL
-  - $SS_VER
+  - $TT_BUILD
 EOL
     fi
   # update datetime
@@ -113,7 +113,7 @@ else
     cat > ss.yml <<EOL
 build: $TRAVIS_BUILD_NUMBER
 files:
-  - $SS_VER
+  - $TT_BUILD
 EOL
 
 fi
@@ -123,7 +123,7 @@ fi
   cat ./ss.yml
   git add -f ss.yml
   
-  git commit -m "Travis build $TRAVIS_BUILD_NUMBER $SS_VER pushed to gh-pages"
+  git commit -m "Travis build $TRAVIS_BUILD_NUMBER $TT_BUILD pushed to gh-pages"
   # git push -fq origin gh-pages # > /dev/null
 
   # keep retrying until push successful
