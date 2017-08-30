@@ -229,7 +229,11 @@ build_tomato()
 #     make distclean ; rm ~/advancedTomato.txt;  time make V1=RT-N5x-CN- V2=-140 r2z  2>&1 | tee ~/advancedTomato.txt
 #     make distclean
 #     rm ~/advancedTomato.txt;  
-    time make V1=RT-N5x-CN- V2=-140 r2z  > ~/advancedTomato.txt
+
+    # time make V1=RT-N5x-CN- V2=-140 r2z  > ~/advancedTomato.txt
+
+    make V1=RT-N5x-CN- V2=-140 r2z &
+
 
     local build_pid=$!
 
