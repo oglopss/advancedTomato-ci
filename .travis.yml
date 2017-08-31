@@ -74,7 +74,8 @@ env:
         # - export PATH=$HOME/x-tools/mipsel-unknown-linux-uclibc/bin:$PATH
         # - TT_BUILD=r2z
         - TT_BUILD=r2j
-
+        
+    global:
         - secure: CXtEpbrMBVhnjfAp3Kt1gmoBVQLzZ6lXvKriUK1w8WRCPd31+jbOVlmQ6LGlxelmp7BDBsK2tvojZp45W3v0GoaW1eeGsBirOR+Cy21QhaZYb8K5pDQCdgMr/U4qm8oa7sMmjyFcQAHZo2O0oaLtU6jqHniZMnCRT4kIHslMCbeGiqQ1wIpVWWs9IwMtGDmoH4r7+ngrzHNlmDYd8HiNL6uNT4XkltlaDPKl8+FEAkAkFaqV3WiSOPWsLsSsG7q6RcP1mzPw/kyYge1mlCvcsoY5T1PiIkETrWHKaexT/iQ1NjWfi+5pjZ0XlEgp8Nrvv7hA7B9o1XW4apB2Nh/t2IGGIRyIBWyPcvLhrlCPLTOBocpaY62TV3USr3kJRwJenJwLvnRBO3CPvV9FctPH1PYCe2Cp5eomAMzJq4c1lG9P6YociaJzquyfCtowtc1WqHDyXIUxTyGKgx4I40wGC58Rm3I3OtI/5p1SAJvNm6L/bCK5fqvghPpXiXR0aO6FCcjJT7jTfNPKlEg4pyDV2Qr+PPjuEFXrBjSACpgMbqHYus9UB9LDrK9yfd+EYv2z3nOsUhVUyZc7AVC/ckXZXJk+01nk1+imZcz/hCtUDcH+ci0yJ4djGUFNUlc42h2wQ58GTCL/uRIZML2lIZfG+7L0Iq28J50y6q3vZ8goiTY=
         
 # Building the standard samples
