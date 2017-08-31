@@ -77,7 +77,11 @@ push_changes()
     #go into directory and copy data we're interested in to that directory
   cd $HOME/gh-pages-$TT_BUILD
   mkdir -p download && cd download
-  cp -Rf ~/advancedtomato/release/src-rt/image/tomato*.trx .
+
+  trx=($(ls -1 ~/advancedtomato/release/src-rt/image/tomato*.trx))
+  trx=${trx[0]}
+
+  cp -Rf $trx .
 
   #add, commit and push files
   git add -f .
@@ -94,12 +98,12 @@ if grep -qe "build: $TRAVIS_BUILD_NUMBER$" ss.yml
 then
     # code if found
     # update files
-    if grep -qe "  - $TT_BUILD$" ss.yml
+    if grep -qe "  - $trx$" ss.yml
     then
         echo files already inside skip
     else
         cat >> ss.yml <<EOL
-  - $TT_BUILD
+  - $trx
 EOL
     fi
   # update datetime
