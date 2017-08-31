@@ -132,7 +132,7 @@ fi
   pushcmd="git push origin gh-pages"
   eval "$pushcmd"
 
-  cat ../.git/config
+  # cat ../.git/config
 
 }
 
