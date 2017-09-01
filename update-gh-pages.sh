@@ -103,7 +103,7 @@ then
         echo files already inside skip
     else
         cat >> ss.yml <<EOL
-  - $trx
+  - $(basename "$trx")
 EOL
     fi
   # update datetime
