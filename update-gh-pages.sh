@@ -117,7 +117,7 @@ else
     cat > ss.yml <<EOL
 build: $TRAVIS_BUILD_NUMBER
 files:
-  - $TT_BUILD
+  - $(basename "$trx")
 EOL
 
 fi
