@@ -72,7 +72,6 @@ env:
     # - CT_SAMPLE=mipsel-unknown-linux-gnu
     matrix:
         # - export PATH=$HOME/x-tools/mipsel-unknown-linux-uclibc/bin:$PATH
-        # - TT_BUILD=r2z
         - TT_BUILD=r2e
         - TT_BUILD=r2c
         - TT_BUILD=r2d
