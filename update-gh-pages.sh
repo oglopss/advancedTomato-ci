@@ -103,7 +103,7 @@ then
         echo files already inside skip
     else
         cat >> ss.yml <<EOL
-  - $(basename "$trx")
+  - $TT_BUILD $(basename "$trx")
 EOL
     fi
   # update datetime
@@ -117,7 +117,7 @@ else
     cat > ss.yml <<EOL
 build: $TRAVIS_BUILD_NUMBER
 files:
-  - $(basename "$trx")
+  - $TT_BUILD $(basename "$trx")
 EOL
 
 fi
