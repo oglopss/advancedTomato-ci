@@ -261,6 +261,8 @@ build_tomato()
    ls -l ~/advancedtomato/release/image
    ls -l ~/advancedtomato/release/src-rt
    ls -l ~/advancedtomato/release/src-rt/image
+
+   ls -l ~/advancedtomato/release/src-rt/wnrtool
    
 
     # Return the result
