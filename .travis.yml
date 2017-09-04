@@ -92,43 +92,43 @@ env:
         - TT_BUILD=r2f
         - TT_BUILD=r2t
 
-        - TT_BUILD=e1000v2f
-        - TT_BUILD=e1000v2i
-        - TT_BUILD=e1200v1f
-        - TT_BUILD=e1200v1i
+        # - TT_BUILD=e1000v2f
+        # - TT_BUILD=e1000v2i
+        # - TT_BUILD=e1200v1f
+        # - TT_BUILD=e1200v1i
 
-        - TT_BUILD=n60e
-        - TT_BUILD=n60c
-        - TT_BUILD=n60d
-        - TT_BUILD=n60g
-        - TT_BUILD=n60t
-        - TT_BUILD=n60b
-        - TT_BUILD=n60o
-        - TT_BUILD=n60z
-        - TT_BUILD=n60i
-        - TT_BUILD=n60j
-        - TT_BUILD=n60v
-        - TT_BUILD=n60m
+        # - TT_BUILD=n60e
+        # - TT_BUILD=n60c
+        # - TT_BUILD=n60d
+        # - TT_BUILD=n60g
+        # - TT_BUILD=n60t
+        # - TT_BUILD=n60b
+        # - TT_BUILD=n60o
+        # - TT_BUILD=n60z
+        # - TT_BUILD=n60i
+        # - TT_BUILD=n60j
+        # - TT_BUILD=n60v
+        # - TT_BUILD=n60m
 
-        - TT_BUILD=n64e
-        - TT_BUILD=n64c
-        - TT_BUILD=n64d
-        - TT_BUILD=n64g
-        - TT_BUILD=n64u
-        - TT_BUILD=n64t
-        - TT_BUILD=n64b
-        - TT_BUILD=n64o
-        - TT_BUILD=n64v
-        - TT_BUILD=n64m
+        # - TT_BUILD=n64e
+        # - TT_BUILD=n64c
+        # - TT_BUILD=n64d
+        # - TT_BUILD=n64g
+        # - TT_BUILD=n64u
+        # - TT_BUILD=n64t
+        # - TT_BUILD=n64b
+        # - TT_BUILD=n64o
+        # - TT_BUILD=n64v
+        # - TT_BUILD=n64m
 
         - TT_BUILD=rtn53
-        - TT_BUILD=e2500
-        - TT_BUILD=e3200
+        # - TT_BUILD=e2500
+        # - TT_BUILD=e3200
         - TT_BUILD=n6
         - TT_BUILD=n60
 
-        - TT_BUILD=v2e
-        - TT_BUILD=v2z
+        # - TT_BUILD=v2e
+        # - TT_BUILD=v2z
 
         - TT_BUILD=r64e
         - TT_BUILD=r64z
