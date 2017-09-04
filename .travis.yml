@@ -46,6 +46,7 @@ addons:
             # - autogen
             # - automake
             - libstdc++6 
+            - lib32stdc++6 # 32bit lib for lzma for v2e and v2z builds
             - net-tools
             - perl
             # - python
