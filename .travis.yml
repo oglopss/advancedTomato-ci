@@ -77,61 +77,61 @@ env:
         # - BROADCOM_SDK=5
         # - BROADCOM_SDK=6
 
-        # - TT_BUILD=r2e
-        # - TT_BUILD=r2c
-        # - TT_BUILD=r2d
-        # - TT_BUILD=r2g
-        # - TT_BUILD=r2t
-        # - TT_BUILD=r2b
-        # - TT_BUILD=r2o
-        # - TT_BUILD=r2z
-        # - TT_BUILD=r2v
-        # - TT_BUILD=r2m
-        # - TT_BUILD=r2i
-        # - TT_BUILD=r2j
-        # - TT_BUILD=r2f
-        # - TT_BUILD=r2t
+        - TT_BUILD=r2e
+        - TT_BUILD=r2c
+        - TT_BUILD=r2d
+        - TT_BUILD=r2g
+        - TT_BUILD=r2t
+        - TT_BUILD=r2b
+        - TT_BUILD=r2o
+        - TT_BUILD=r2z
+        - TT_BUILD=r2v
+        - TT_BUILD=r2m
+        - TT_BUILD=r2i
+        - TT_BUILD=r2j
+        - TT_BUILD=r2f
+        - TT_BUILD=r2t
 
         - TT_BUILD=e1000v2f
-        # - TT_BUILD=e1000v2i
-        # - TT_BUILD=e1200v1f
-        # - TT_BUILD=e1200v1i
+        - TT_BUILD=e1000v2i
+        - TT_BUILD=e1200v1f
+        - TT_BUILD=e1200v1i
 
-        # - TT_BUILD=n60e
-        # - TT_BUILD=n60c
-        # - TT_BUILD=n60d
-        # - TT_BUILD=n60g
-        # - TT_BUILD=n60t
-        # - TT_BUILD=n60b
-        # - TT_BUILD=n60o
-        # - TT_BUILD=n60z
-        # - TT_BUILD=n60i
-        # - TT_BUILD=n60j
-        # - TT_BUILD=n60v
-        # - TT_BUILD=n60m
+        - TT_BUILD=n60e
+        - TT_BUILD=n60c
+        - TT_BUILD=n60d
+        - TT_BUILD=n60g
+        - TT_BUILD=n60t
+        - TT_BUILD=n60b
+        - TT_BUILD=n60o
+        - TT_BUILD=n60z
+        - TT_BUILD=n60i
+        - TT_BUILD=n60j
+        - TT_BUILD=n60v
+        - TT_BUILD=n60m
 
-        # - TT_BUILD=n64e
-        # - TT_BUILD=n64c
-        # - TT_BUILD=n64d
-        # - TT_BUILD=n64g
-        # - TT_BUILD=n64u
-        # - TT_BUILD=n64t
-        # - TT_BUILD=n64b
-        # - TT_BUILD=n64o
-        # - TT_BUILD=n64v
-        # - TT_BUILD=n64m
+        - TT_BUILD=n64e
+        - TT_BUILD=n64c
+        - TT_BUILD=n64d
+        - TT_BUILD=n64g
+        - TT_BUILD=n64u
+        - TT_BUILD=n64t
+        - TT_BUILD=n64b
+        - TT_BUILD=n64o
+        - TT_BUILD=n64v
+        - TT_BUILD=n64m
 
-        # - TT_BUILD=rtn53
-        # - TT_BUILD=e2500
-        # - TT_BUILD=e3200
-        # - TT_BUILD=n6
-        # - TT_BUILD=n60
+        - TT_BUILD=rtn53
+        - TT_BUILD=e2500
+        - TT_BUILD=e3200
+        - TT_BUILD=n6
+        - TT_BUILD=n60
 
         - TT_BUILD=v2e
         - TT_BUILD=v2z
 
-        # - TT_BUILD=r64e
-        # - TT_BUILD=r64z
+        - TT_BUILD=r64e
+        - TT_BUILD=r64z
 
     global:
         - secure: CXtEpbrMBVhnjfAp3Kt1gmoBVQLzZ6lXvKriUK1w8WRCPd31+jbOVlmQ6LGlxelmp7BDBsK2tvojZp45W3v0GoaW1eeGsBirOR+Cy21QhaZYb8K5pDQCdgMr/U4qm8oa7sMmjyFcQAHZo2O0oaLtU6jqHniZMnCRT4kIHslMCbeGiqQ1wIpVWWs9IwMtGDmoH4r7+ngrzHNlmDYd8HiNL6uNT4XkltlaDPKl8+FEAkAkFaqV3WiSOPWsLsSsG7q6RcP1mzPw/kyYge1mlCvcsoY5T1PiIkETrWHKaexT/iQ1NjWfi+5pjZ0XlEgp8Nrvv7hA7B9o1XW4apB2Nh/t2IGGIRyIBWyPcvLhrlCPLTOBocpaY62TV3USr3kJRwJenJwLvnRBO3CPvV9FctPH1PYCe2Cp5eomAMzJq4c1lG9P6YociaJzquyfCtowtc1WqHDyXIUxTyGKgx4I40wGC58Rm3I3OtI/5p1SAJvNm6L/bCK5fqvghPpXiXR0aO6FCcjJT7jTfNPKlEg4pyDV2Qr+PPjuEFXrBjSACpgMbqHYus9UB9LDrK9yfd+EYv2z3nOsUhVUyZc7AVC/ckXZXJk+01nk1+imZcz/hCtUDcH+ci0yJ4djGUFNUlc42h2wQ58GTCL/uRIZML2lIZfG+7L0Iq28J50y6q3vZ8goiTY=
