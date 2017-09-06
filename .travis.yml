@@ -77,19 +77,19 @@ env:
         # - BROADCOM_SDK=5
         # - BROADCOM_SDK=6
 
-        - TT_BUILD=r2e
-        - TT_BUILD=r2c
-        - TT_BUILD=r2d
-        - TT_BUILD=r2g
-        - TT_BUILD=r2t
-        - TT_BUILD=r2b
-        - TT_BUILD=r2o
+        # - TT_BUILD=r2e
+        # - TT_BUILD=r2c
+        # - TT_BUILD=r2d
+        # - TT_BUILD=r2g
+        # - TT_BUILD=r2t
+        # - TT_BUILD=r2b
+        # - TT_BUILD=r2o
         - TT_BUILD=r2z
-        - TT_BUILD=r2v
-        - TT_BUILD=r2m
-        - TT_BUILD=r2i
-        - TT_BUILD=r2j
-        - TT_BUILD=r2f
+        # - TT_BUILD=r2v
+        # - TT_BUILD=r2m
+        # - TT_BUILD=r2i
+        # - TT_BUILD=r2j
+        # - TT_BUILD=r2f
         - TT_BUILD=r2t
 
         # - TT_BUILD=e1000v2f
@@ -103,7 +103,7 @@ env:
         # - TT_BUILD=n60g
         # - TT_BUILD=n60t
         # - TT_BUILD=n60b
-        # - TT_BUILD=n60o
+        - TT_BUILD=n60o
         # - TT_BUILD=n60z
         # - TT_BUILD=n60i
         # - TT_BUILD=n60j
@@ -119,16 +119,16 @@ env:
         # - TT_BUILD=n64b
         # - TT_BUILD=n64o
         # - TT_BUILD=n64v
-        # - TT_BUILD=n64m
+        - TT_BUILD=n64m
 
         - TT_BUILD=rtn53
-        # - TT_BUILD=e2500
-        # - TT_BUILD=e3200
+        - TT_BUILD=e2500
+        - TT_BUILD=e3200
         - TT_BUILD=n6
         - TT_BUILD=n60
 
-        # - TT_BUILD=v2e
-        # - TT_BUILD=v2z
+        - TT_BUILD=v2e
+        - TT_BUILD=v2z
 
         - TT_BUILD=r64e
         - TT_BUILD=r64z
