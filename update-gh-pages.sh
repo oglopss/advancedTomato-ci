@@ -90,22 +90,22 @@ push_changes()
       fw=${bin[0]}
     else
       # echo crap
-      tar czvf $TT_BUILD.tar.gz "${bin[@]}"
-      fw=$TT_BUILD.tar.gz
+      tar czvf tomato-$TT_BUILD.tar.gz "${bin[@]}"
+      fw=tomato-$TT_BUILD.tar.gz
     fi
   elif [ "${#chk[@]}" -ge 1 ]; then
     if [ "${#chk[@]}" -eq 1 ]; then
       fw=${chk[0]}
     else
-      tar czvf $TT_BUILD.tar.gz "${chk[@]}"
-      fw=$TT_BUILD.tar.gz
+      tar czvf tomato-$TT_BUILD.tar.gz "${chk[@]}"
+      fw=tomato-$TT_BUILD.tar.gz
     fi
   elif [ "${#trx[@]}" -ge 1 ]; then
     if [ "${#trx[@]}" -eq 1 ]; then
       fw=${trx[0]}
     else
-      tar czvf $TT_BUILD.tar.gz "${trx[@]}"
-      fw=$TT_BUILD.tar.gz
+      tar czvf tomato-$TT_BUILD.tar.gz "${trx[@]}"
+      fw=tomato-$TT_BUILD.tar.gz
     fi
   fi
 
