@@ -79,7 +79,7 @@ push_changes()
   mkdir -p download && cd download
 
   # -t makes sure you get the last modified trx, some builds have more than one trx files
-  image=~/tomato/release/src-rt/image
+  image=~/advancedTomato/release/src-rt/image
   bin=($(ls -1t $image/tomato*.bin))
   chk=($(ls -1t $image/tomato*.chk))
   trx=($(ls -1t $image/tomato*.trx))
