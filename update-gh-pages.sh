@@ -115,7 +115,15 @@ push_changes()
 
   cd $HOME/gh-pages-$TT_BUILD/download
 
-  cp -Rf $image/$fw .
+  if [ -f $image/$fw ]; then
+    cp -Rf $image/$fw .
+  else
+    echo "$fw not found!"
+    fw=""
+  fi
+
+
+  
   # cd $HOME/gh-pages-$TT_BUILD/download
 
   #add, commit and push files
