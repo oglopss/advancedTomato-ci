@@ -84,32 +84,38 @@ push_changes()
   chk=($(ls -1t $image/tomato*.chk))
   trx=($(ls -1t $image/tomato*.trx))
 
+  echo =========== image dir ===============
+  ls -lt $image/*
 
   if [ "${#bin[@]}" -ge 1 ]; then
     if [ "${#bin[@]}" -eq 1 ]; then
       fw=${bin[0]}
     else
       # echo crap
-      tar czvf -C $image tomato-$TT_BUILD.tar.gz "${bin[@]}"
+      cd $image
+      tar czvf $HOME/gh-pages-$TT_BUILD/download/tomato-$TT_BUILD.tar.gz "${bin[@]}"
       fw=tomato-$TT_BUILD.tar.gz
     fi
   elif [ "${#chk[@]}" -ge 1 ]; then
     if [ "${#chk[@]}" -eq 1 ]; then
       fw=${chk[0]}
     else
-      tar czvf -C $image tomato-$TT_BUILD.tar.gz "${chk[@]}"
+      cd $image
+      tar czvf $HOME/gh-pages-$TT_BUILD/download/tomato-$TT_BUILD.tar.gz "${chk[@]}"
       fw=tomato-$TT_BUILD.tar.gz
     fi
   elif [ "${#trx[@]}" -ge 1 ]; then
     if [ "${#trx[@]}" -eq 1 ]; then
       fw=${trx[0]}
     else
-      tar czvf -C $image tomato-$TT_BUILD.tar.gz "${trx[@]}"
+      cd $image
+      tar czvf $HOME/gh-pages-$TT_BUILD/download/tomato-$TT_BUILD.tar.gz "${trx[@]}"
       fw=tomato-$TT_BUILD.tar.gz
     fi
   fi
 
-  cp -Rf $fw .
+  # cp -Rf $fw .
+  cd $HOME/gh-pages-$TT_BUILD/download
 
   #add, commit and push files
   git add -f .
