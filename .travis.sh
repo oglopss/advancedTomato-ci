@@ -30,7 +30,7 @@ sudo pip install  urllib3 -U
 sudo pip install requests -U
 
 git clone -b travis https://github.com/oglops/advancedtomato.git
-git clone -b v3.4-140 https://github.com/oglops/advancedtomato-gui.git
+git clone -b v3.5-140 https://github.com/oglops/advancedtomato-gui.git
 
 sudo ln -s ~/advancedtomato/tools/brcm /opt/brcm
 
