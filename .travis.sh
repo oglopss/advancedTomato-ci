@@ -182,8 +182,9 @@ cd ~
 wget https://downloads.sourceforge.net/project/libuuid/libuuid-1.0.3.tar.gz
 tar xf libuuid-1.0.3.tar.gz
 cd libuuid-1.0.3
-sh configure --prefix /usr
-# CC=arm-uclibc-gcc CXX=arm-uclibc-g++ AR=arm-uclibc-ar RANLIB=/opt/brcm-arm/bin/arm-uclibc-ranlib ./configure --host=mipsel-uclibc-linux --prefix=$HOME/uuid-install
+# sh configure --prefix /usr
+CC=mipsel-uclibc-gcc CXX=mipsel-uclibc-g++ AR=mipsel-uclibc-ar RANLIB=/opt/brcm-arm/bin/mipsel-uclibc-ranlib ./configure --host=mipsel-uclibc-linux 
+# --prefix=$HOME/uuid-install
 make
 sudo  make install
 
