@@ -50,7 +50,7 @@ addons:
             - net-tools
             - perl
             # - python
-            - uuid-dev
+            # - uuid-dev
 
 # Handle git submodules yourself
 git:

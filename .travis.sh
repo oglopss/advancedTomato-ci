@@ -178,7 +178,14 @@ dpkg -l | grep "autogen\|autoconf\|automake\|libtool"
 # ii  libtool                             2.4.2-1ubuntu1                                      Generic library support script
 
 
-
+cd ~
+wget https://downloads.sourceforge.net/project/libuuid/libuuid-1.0.3.tar.gz
+tar xf libuuid-1.0.3.tar.gz
+cd libuuid-1.0.3
+sh configure --prefix /usr
+# CC=arm-uclibc-gcc CXX=arm-uclibc-g++ AR=arm-uclibc-ar RANLIB=/opt/brcm-arm/bin/arm-uclibc-ranlib ./configure --host=mipsel-uclibc-linux --prefix=$HOME/uuid-install
+make
+sudo  make install
 
 # echo /usr/share/aclocal | sudo tee --append /usr/local/share/aclocal/dirlist
 
