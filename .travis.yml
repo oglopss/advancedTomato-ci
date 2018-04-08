@@ -50,6 +50,7 @@ addons:
             - net-tools
             - perl
             - python
+            - libusb-dev
             # - uuid-dev
 
 # Handle git submodules yourself
