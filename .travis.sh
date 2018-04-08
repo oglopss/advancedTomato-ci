@@ -182,8 +182,8 @@ cd ~
 wget https://downloads.sourceforge.net/project/libuuid/libuuid-1.0.3.tar.gz
 tar xf libuuid-1.0.3.tar.gz
 cd libuuid-1.0.3
-sh configure --prefix /usr
-# CC=mipsel-uclibc-gcc CXX=mipsel-uclibc-g++ AR=mipsel-uclibc-ar RANLIB=/opt/brcm/bin/mipsel-uclibc-ranlib ./configure --host=mipsel-uclibc-linux --prefix=/usr
+# sh configure --prefix /usr
+CC=mipsel-uclibc-gcc CXX=mipsel-uclibc-g++ AR=mipsel-uclibc-ar RANLIB=/opt/brcm/bin/mipsel-uclibc-ranlib ./configure --host=mipsel-uclibc-linux --prefix=/usr
 # --prefix=$HOME/uuid-install
 make
 sudo  make install
@@ -219,6 +219,9 @@ build_tomato()
 
     echo ======after=========
     ls -l router/mysql
+
+    echo ======/opt/brcm/hndtools-mipsel-uclibc/bin=========
+    ls -l /opt/brcm/hndtools-mipsel-uclibc/bin
 
     echo ================= uuid-dev =====================
     dpkg-query -L uuid-dev
