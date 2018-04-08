@@ -36,6 +36,9 @@ sudo ln -s ~/advancedtomato/tools/brcm /opt/brcm
 
 rsync -rpv --ignore-times  ./advancedtomato-gui/*  ./advancedtomato/release/src-rt/router/www/  --exclude .git
 
+echo ========== upnpevent.c ==========
+head -50 advancedtomato/release/src-rt/router/miniupnpd/upnpevents.c
+
 echo ========== bison ==========
 apt-cache showpkg bison
 
