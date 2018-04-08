@@ -188,7 +188,8 @@ make
 sudo  make install
 
 echo =========== mipsel-uclibc-ranlib ===========
-ls -l /home/oglop/advancedtomato/tools/brcm/hndtools-mipsel-uclibc/bin/mipsel-uclibc-ranlib
+echo $HOME
+ls -l $HOME/advancedtomato/tools/brcm/hndtools-mipsel-uclibc/bin/mipsel-uclibc-ranlib
 which mipsel-uclibc-ranlib
 echo $PATH
 
