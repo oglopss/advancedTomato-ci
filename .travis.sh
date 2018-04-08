@@ -38,6 +38,7 @@ rsync -rpv --ignore-times  ./advancedtomato-gui/*  ./advancedtomato/release/src-
 
 echo ========== upnpevent.c ==========
 head -50 advancedtomato/release/src-rt/router/miniupnpd/upnpevents.c
+head -50 advancedtomato/release/src-rt/router/miniupnpd/Makefile.linux
 
 echo ========== bison ==========
 apt-cache showpkg bison
