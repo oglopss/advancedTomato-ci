@@ -187,6 +187,12 @@ CC=mipsel-uclibc-gcc CXX=mipsel-uclibc-g++ AR=mipsel-uclibc-ar RANLIB=mipsel-ucl
 make
 sudo  make install
 
+echo =========== mipsel-uclibc-ranlib ===========
+ls -l /home/oglop/advancedtomato/tools/brcm/hndtools-mipsel-uclibc/bin/mipsel-uclibc-ranlib
+which mipsel-uclibc-ranlib
+echo $PATH
+
+
 # echo /usr/share/aclocal | sudo tee --append /usr/local/share/aclocal/dirlist
 
 # echo =========== dirlist ===========
