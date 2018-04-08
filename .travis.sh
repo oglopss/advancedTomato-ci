@@ -36,9 +36,9 @@ sudo ln -s ~/advancedtomato/tools/brcm /opt/brcm
 
 rsync -rpv --ignore-times  ./advancedtomato-gui/*  ./advancedtomato/release/src-rt/router/www/  --exclude .git
 
-echo ========== upnpevent.c ==========
-head -50 advancedtomato/release/src-rt/router/miniupnpd/upnpevents.c
-head -200 advancedtomato/release/src-rt/router/miniupnpd/Makefile.linux
+# echo ========== upnpevent.c ==========
+# head -50 advancedtomato/release/src-rt/router/miniupnpd/upnpevents.c
+# head -200 advancedtomato/release/src-rt/router/miniupnpd/Makefile.linux
 echo ========== pkg-config --exists uuid ==========
 pkg-config pkg-config --exists uuid && echo 1
 
@@ -192,6 +192,9 @@ sh configure --prefix /usr
 # CC=mipsel-uclibc-gcc CXX=mipsel-uclibc-g++ AR=mipsel-uclibc-ar RANLIB=/opt/brcm/hndtools-mipsel-uclibc/bin/mipsel-uclibc-ranlib ./configure --host=mipsel-uclibc-linux --prefix=$HOME/uuid-install
 make
 sudo  make install
+
+echo ========== pkg-config --exists uuid again==========
+pkg-config pkg-config --exists uuid && echo 1
 
 
 # echo =========== mipsel-uclibc-ranlib ===========
