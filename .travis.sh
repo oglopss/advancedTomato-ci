@@ -239,51 +239,51 @@ build_tomato()
     # echo ======/opt/brcm/hndtools-mipsel-uclibc/bin=========
     # ls -l /opt/brcm/hndtools-mipsel-uclibc/bin
 
-    echo ================= uuid-dev =====================
-    dpkg-query -L uuid-dev
-    echo ================= libuuid1 =====================
-    dpkg-query -L libuuid1
+    # echo ================= uuid-dev =====================
+    # dpkg-query -L uuid-dev
+    # echo ================= libuuid1 =====================
+    # dpkg-query -L libuuid1
 
-    echo ================= uuid =====================
-    uname -i
-    ls -l /usr/lib64/pkgconfig/
-    echo =============== lib =====================
-    ls -l /usr/lib/pkgconfig/
+    # echo ================= uuid =====================
+    # uname -i
+    # ls -l /usr/lib64/pkgconfig/
+    # echo =============== lib =====================
+    # ls -l /usr/lib/pkgconfig/
 
-    cat /usr/lib/pkgconfig/uuid.pc
+    # cat /usr/lib/pkgconfig/uuid.pc
 
-    echo =============== grep uuid_generate =====================
-    grep uuid_generate /usr/include/uuid/uuid.h
+    # echo =============== grep uuid_generate =====================
+    # grep uuid_generate /usr/include/uuid/uuid.h
 
-    echo ======== pkg-config calls ========
-    # sudo ln -sf /usr/lib/libuuid.so.1 /usr/lib/libuuid.so
+    # echo ======== pkg-config calls ========
+    # # sudo ln -sf /usr/lib/libuuid.so.1 /usr/lib/libuuid.so
 
-    pkg-config --libs-only-L uuid
-    pkg-config --version
-    pkg-config --print-provides uuid
-    pkg-config --help
-    pkg-config --path uuid
-    pkg-config --static --libs-only-l uuid
-    pkg-config --libs-only-l uuid
-    pkg-config --libs-only-L uuid
-    pkg-config  --cflags uuid
-    pkg-config  --static --cflags uuid
-    ls -l /usr/include
-    echo ================= uuid2 =====================
-    # ls -l /usr/include/uuid/
-    # ls -l /tt_include 
-    # ls -l /tt_lib
-    echo ================= uuid lib =====================
-    # locate libuuid
-    ls -l /usr/lib
+    # pkg-config --libs-only-L uuid
+    # pkg-config --version
+    # pkg-config --print-provides uuid
+    # pkg-config --help
+    # pkg-config --path uuid
+    # pkg-config --static --libs-only-l uuid
+    # pkg-config --libs-only-l uuid
+    # pkg-config --libs-only-L uuid
+    # pkg-config  --cflags uuid
+    # pkg-config  --static --cflags uuid
+    # ls -l /usr/include
+    # echo ================= uuid2 =====================
+    # # ls -l /usr/include/uuid/
+    # # ls -l /tt_include 
+    # # ls -l /tt_lib
+    # echo ================= uuid lib =====================
+    # # locate libuuid
+    # ls -l /usr/lib
     
-    echo ================= uuid lib 2 =====================
-    # locate libuuid
-    ls -l /lib/x86_64-linux-gnu/
+    # echo ================= uuid lib 2 =====================
+    # # locate libuuid
+    # ls -l /lib/x86_64-linux-gnu/
 
-    echo ================= uuid lib 3 =====================
-    # locate libuuid
-    ls -l /lib
+    # echo ================= uuid lib 3 =====================
+    # # locate libuuid
+    # ls -l /lib
 
     
 
@@ -310,8 +310,8 @@ build_tomato()
     # time make V1=RT-N5x-CN- V2=-140 r2z  > ~/advancedTomato.txt
 
     # make V1=RT-N5x-CN- V2=-140 r2z &
-    #make V1=RT-N5x-CN- V2=-140 $TT_BUILD > /dev/null &
-    make V1=RT-N5x-CN- V2=-140 $TT_BUILD 
+    make V1=RT-N5x-CN- V2=-140 $TT_BUILD > /dev/null &
+    # make V1=RT-N5x-CN- V2=-140 $TT_BUILD 
 
 
     local build_pid=$!

@@ -114,7 +114,7 @@ env:
         # - TT_BUILD=n60m
 
         # - TT_BUILD=n64e
-        # - TT_BUILD=n64c
+        - TT_BUILD=n64c
         # - TT_BUILD=n64d
         # - TT_BUILD=n64g
         # - TT_BUILD=n64u
@@ -130,7 +130,7 @@ env:
         # - TT_BUILD=n6
         # - TT_BUILD=n60
 
-        # - TT_BUILD=v2e
+        - TT_BUILD=v2e
         # - TT_BUILD=v2z
 
         # - TT_BUILD=r64e
@@ -143,7 +143,7 @@ env:
 script:
     # - . ls -l $HOME
     - sudo apt-get remove uuid-dev
-    - sudo apt-get remove libuuid1
+    # - sudo apt-get remove libuuid1
     - . $TRAVIS_BUILD_DIR/.travis.sh      # Load the travis environment
     - echo ============================
     - pre_build_prep > /dev/null
