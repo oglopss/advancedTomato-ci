@@ -38,7 +38,9 @@ rsync -rpv --ignore-times  ./advancedtomato-gui/*  ./advancedtomato/release/src-
 
 echo ========== upnpevent.c ==========
 head -50 advancedtomato/release/src-rt/router/miniupnpd/upnpevents.c
-head -50 advancedtomato/release/src-rt/router/miniupnpd/Makefile.linux
+head -200 advancedtomato/release/src-rt/router/miniupnpd/Makefile.linux
+echo ========== pkg-config --exists uuid ==========
+pkg-config pkg-config --exists uuid && echo 1
 
 echo ========== bison ==========
 apt-cache showpkg bison
