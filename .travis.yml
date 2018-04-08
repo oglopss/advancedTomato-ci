@@ -51,8 +51,8 @@ addons:
             - perl
             - python
             - libusb-dev
-            - libuuid1
-            - uuid-dev
+            # - libuuid1
+            # - uuid-dev
 
 # Handle git submodules yourself
 git:
@@ -131,7 +131,7 @@ env:
         # - TT_BUILD=n60
 
         # - TT_BUILD=v2e
-        - TT_BUILD=v2z
+        # - TT_BUILD=v2z
 
         # - TT_BUILD=r64e
         # - TT_BUILD=r64z
@@ -142,6 +142,8 @@ env:
 # Building the standard samples
 script:
     # - . ls -l $HOME
+    - sudo apt-get remove uuid-dev
+    - sudo apt-get remove libuuid1
     - . $TRAVIS_BUILD_DIR/.travis.sh      # Load the travis environment
     - echo ============================
     # - pre_build_prep > /dev/null
