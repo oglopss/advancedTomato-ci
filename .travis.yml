@@ -51,7 +51,8 @@ addons:
             - perl
             - python
             - libusb-dev
-            # - uuid-dev
+            - libuuid1
+            - uuid-dev
 
 # Handle git submodules yourself
 git:
