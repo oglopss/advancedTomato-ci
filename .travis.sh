@@ -188,12 +188,12 @@ cd ~
 wget https://downloads.sourceforge.net/project/libuuid/libuuid-1.0.3.tar.gz
 tar xf libuuid-1.0.3.tar.gz
 cd libuuid-1.0.3
-sh configure --prefix /usr
-# CC=mipsel-uclibc-gcc CXX=mipsel-uclibc-g++ AR=mipsel-uclibc-ar RANLIB=/opt/brcm/hndtools-mipsel-uclibc/bin/mipsel-uclibc-ranlib ./configure --host=mipsel-uclibc-linux --prefix=$HOME/uuid-install
+# sh configure --prefix /usr
+CC=mipsel-uclibc-gcc CXX=mipsel-uclibc-g++ AR=mipsel-uclibc-ar RANLIB=/opt/brcm/hndtools-mipsel-uclibc/bin/mipsel-uclibc-ranlib ./configure --host=mipsel-uclibc-linux --prefix=$HOME/uuid-install
 make
 sudo  make install
 
-echo ========== pkg-config --exists uuid again==========
+echo ========== pkg-config --exists uuid again ==========
 pkg-config pkg-config --exists uuid && echo 1
 
 
